@@ -1,0 +1,249 @@
+@0009 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced.~
+@19 = ~Voleur metamorphe~
+@10 = ~voleur métamorphe~
+@11 = ~Voleur métamorphe~
+@12 = ~VOLEUR MÉTAMORPHE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut se métamorphoser en loup-garou une fois par jour, puis une fois supplémentaire tous les 2 niveaux.
+- Au niveau 13, peut se métamorphoser en loup-garou majeur une fois par jour, puis une fois supplémentaire tous les 2 niveaux.
+
+Inconvénients :
+- Alignement limité à Neutre strict.
+- Ne peut porter aucune armure.~
+
+@29 = ~Voleur Tyreen~
+@20 = ~voleur Tyréen~
+@21 = ~Voleur Tyréen~
+@22 = ~Voleur Tyréen : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut lancer « Exaltation » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+EXALTATION : Ce sort permet au voleur d'aider et de protéger une personne autre que lui-même. Par le toucher, le lanceur supprime les effets de peur, de sommeil, de débilité mentale, de perte de conscience, et d'intoxication, ainsi que des états de berserk et de confusion de l'esprit. En outre, le bénéficiaire est protégé contre les sorts et autres attaques qui causent ces effets pendant 1 tour.
+
+- Peut lancer « Faveur divine » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.
+
+FAVEUR DIVINE : Ce sort confère au lanceur un bonus de +1 au toucher et aux jets de dégâts tous les 3 niveaux (maximum +6). Le sort dure 2 tours.
+
+Inconvénients :
+- N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
+- Doit être d'alignement neutre bon ou loyal neutre.~
+
+@39 = ~Moine Maitre-Shi~
+@30 = ~moine Maître-Shi~
+@31 = ~Moine Maître-Shi~
+@32 = ~MOINE MAITRE-SHI : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut attribuer 2 étoiles dans les styles de combat à deux armes et à une main.
+- Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée.
+
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+
+Inconvénients :
+- La classe d'armure n'augmente que tous les 3 niveaux.~
+
+@49 = ~Skalde totemique~
+@40 = ~skalde totémique~
+@41 = ~Skalde totémique~
+@42 = ~SKALDE TOTÉMIQUE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +1 aux jets de toucher et de dégâts.
+- La chanson du Scalde a des effets différents de celle du barde et varie en fonction de son niveau :
+ Niveau 1-14 : Les alliés gagnent un bonus de +2 aux jets de toucher et de dégâts et +2 à la CA.
+ Niveau 15-19 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur.
+ Niveau 20 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur, l'étourdissement et la confusion.
+
+- Peut utiliser « Convocation d'esprit animal » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+CONVOCATION D'ESPRIT ANIMAL : Le skalde totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l'aider pendant 6 tours. L'esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.
+
+Inconvénients :
+- Score de Vol à la tire divisé par 4.
+- Alignement limité à Neutre strict.
+- Ne peut être compétent qu'avec les armes utilisables par les druides.~
+
+@59 = ~Moine assassin~
+@50 = ~moine assassin~
+@51 = ~Moine assassin~
+@52 = ~MOINE ASSASSIN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +1 aux jets de toucher et de dégâts.
+- Peut effectuer des attaques sournoises qui peuvent atteindre un multiplicateur de x7.
+  Niveau 1-5 : x2
+  Niveau 6-11 : x3
+  Niveau 12-17 : x4
+  Niveau 18-23 : x5
+  Niveau 24-29 : x6
+  Niveau 30+ : x7
+- Peut utiliser « Attaque empoisonnée » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+ATTAQUE EMPOISONNÉE :
+Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectée qu'une fois par round et les dégâts de poison varient selon le niveau du personnage :
+
+1er : la cible subit 1 dégât de poison par seconde pendant 6 secondes (jet de sauvegarde contre la mort +1 pour annuler)
+5e : la cible subit 1 dégât de poison par seconde pendant 12 secondes (jet de sauvegarde contre la mort pour annuler) et subit immédiatement 2 dégâts de poison (pas de jet de sauvegarde)
+9e : la cible subit 1 dégât de poison par seconde pendant 18 secondes (jet de sauvegarde contre la mort à -1 pour annuler) et subit immédiatement 4 dégâts de poison (pas de jet de sauvegarde)
+13e : la cible subit 1 dégât de poison par seconde pendant 24 secondes (jet de sauvegarde contre la mort à -2 pour annuler) et subit immédiatement 6 dégâts de poison (pas de jet de sauvegarde)
+
+Inconvénients :
+- Ne peut pas être d'alignement bon.
+- Ne peut utiliser la capacité Imposition des mains.
+- Ne peut utiliser la capacité Coup étourdissant.~
+
+@69 = ~Moine tueur de magicien~
+@60 = ~moine tueur de magicien~
+@61 = ~Moine tueur de magicien~
+@62 = ~MOINE TUEUR DE MAGICIEN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Tout lanceur de sort touché subit 25 % de probabilité cumulative de rater ses incantations.
+- Au niveau 10 : +4% de résistance à la magie par niveau (maximum 100% au niveau 25).
+
+Inconvénient :
+Ne peut porter aucun objet magique excepté armes et bottes.~
+
+@79 = ~Chaman belluaire~
+@70 = ~chaman belluaire~
+@71 = ~Chaman belluaire~
+@72 = ~CHAMAN BELLUAIRE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut utiliser « Convocation de familier ».
+- Niveau 8 : gagne « Convocation d'animaux I » en tant que sort de niveau 1.
+- Niveau 10 : gagne « Convocation d'animaux II » en tant que sort de niveau 2.
+- Niveau 12 : gagne « Convocation d'animaux III » en tant que sort de niveau 3.
+
+Inconvénients :
+- Ne peut utiliser que les bâton, le gourdin et l'arc court.~
+
+@89 = ~Chaman justicier~
+@80 = ~chaman justicier~
+@81 = ~Chaman justicier~
+@82 = ~CHAMAN JUSTICIER : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Au niveau 7, il peut changer de forme en loup, en ours noir ou en ours brun une fois par jour.
+- Au niveau 10, il peut changer de forme en Araignée-sabre, en Bébé wiverne ou en Salamandre de feu une fois par jour.
+- Au niveau 19, il acquiert un usage supplémentaire des métamorphoses.
+- Six sorts profanes jusqu'au 6ème niveau sont ajoutés à son répertoire :
+  Niveau 1 : Orbe chromatique
+  Niveau 2 : Toile d'araignée
+  Niveau 3 : Éclair
+  Niveau 4 : Invisibilité majeure
+  Niveau 5 : Chaos
+  Niveau 6 : Chaîne d'éclairs
+
+Inconvénients :
+- Ne peut porter d'armure plus lourde que celle de cuir.
+- -2 en Force et Constitution.
+- Alignement limité à Neutre strict.~
+
+@99 = ~Kensai disciple du dragon~
+@90 = ~kensai disciple du dragon~
+@91 = ~Kensai disciple du dragon~
+@92 = ~KENSAI DISCIPLE DU DRAGON : cette classe est une combinaison de deux classes.
+
+Avantages : 
+- Bonus de +3 à la classe d'armure.
+- Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.
+- Bonus de -1 au facteur de vitesse tous les 4 niveaux.
+- Peut utiliser la capacité « Kaï » une fois par jour. Obtiens une utilisation supplémentaire tous les 4 niveaux.
+
+KAÏ : Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.
+
+- Niveau 3 : peut utiliser Souffle une fois par jour.
+
+SOUFFLE : le Kensaï disciple du Dragon crache une flamme d'une portée de 9 m qui inflige 3d8 points de dégâts de feu à toutes les créatures se trouvant dans le cône de 140 degrés.
+
+- Niveau 4 : gagne 25 % de résistance au feu.
+- Niveau 5 : bonus de +1 à la CA et à la Constitution.
+- Niveau 6 : les dégâts de Souffle augmentent jusqu'à 4d8.
+- Niveau 8 : 50 % de résistance au feu.
+- Niveau 9 : les dégâts de Souffle augmentent jusqu'à 5d8.
+- Niveau 10 : bonus de +1 à la CA.
+- Niveau 12 : les dégâts de Souffle augmentent jusqu'à 6d8.
+- Niveau 12 : 75 % de résistance au feu.
+- Niveau 15 : les dégâts de Souffle augmentent jusqu'à 7d8.
+- Niveau 15 : bonus de +1 à la CA et à la Constitution.
+- Niveau 16 : 100 % de résistance au feu.
+- Niveau 18 : les dégâts de Souffle augmentent jusqu'à 8d8.
+- Niveau 20 : bonus de +1 à la CA.
+- Dés de vie : D12.
+
+Inconvénients :
+- Ne peut pas se jumeler.
+- Ne peut utiliser d'armes à distance.
+- Ne peut porter d'armure.
+- Ne peut porter de gantelets ou de bracelets.
+- Alignement restreint aux non chaotiques.
+- Ne peut que qu'atteindre la haute maîtrise (quatre emplacements) dans le maniement des armes.~
+
+@109 = ~Defenseur barbare~
+@100 = ~défenseur barbare~
+@101 = ~Défenseur barbare~
+@102 = ~DÉFENSEUR BARBARE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut atteindre la maîtrise (trois emplacements) avec les haches et les marteaux de guerre.
+- Peut se spécialiser (deux étoiles) dans n'importe quel style de combat, et allouer trois étoiles dans le style de combat à deux armes.
+- Bonus de +2 points en vitesse de déplacement.
+- Immunité aux attaques sournoises.
+- Peut utiliser « Position défensive » et « Rage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+POSITION DÉFENSIVE : le Protecteur barbare gagne 50 % de résistance à toute forme de dégâts physiques, un bonus de +2 aux jets de sauvegarde, et un malus de 50 % à la vitesse de déplacement pendant 1 tour.
+
+RAGE : Pendant 5 rounds, la rage confère un bonus de +4 en Constitution et en Force, une pénalité de -2 à la Classe d'Armure et un bonus de +2 aux jets de sauvegarde contre les sorts. La rage immunise aussi contre les sorts de charme, d'immobilisation, d'effroi, de labyrinthe, d'étourdissement, de sommeil, de confusion et d'absorption de niveau.
+
+- Gagne 10 % de résistance aux dégâts contondants, tranchants, perforants et de projectiles tous les 5 niveaux, jusqu'à 40 % au niveau 20.
+- Dés de vie : d12
+
+Inconvénients :
+- Ne peut pas se jumeler.
+- Ne peut pas porter d'armure plus lourde que l'armure feuilletée.
+- Ne peut qu'être compétant avec les autres armes.~
+
+@119 = ~Clerc bretteur~
+@110 = ~clerc bretteur~
+@111 = ~Clerc bretteur~
+@112 = ~CLERC BRETTEUR : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de -1 à la classe d'armure, et -1 supplémentaire tous les 5 niveaux.
+- Bonus de +1 aux jets de toucher et de dégâts tous les 5 niveaux.
+- Peut se spécialiser (2 étoiles) en toute arme de mêlée de clerc.
+- Peut dépenser jusqu'à 3 étoiles dans le style de combat à deux armes.
+
+Inconvénients :
+- Ne peut pas repousser les morts-vivants.~
+
+@129 = ~Inquisiteur archer~
+@120 = ~inquisiteur archer~
+@121 = ~Inquisiteur archer~
+@122 = ~INQUISITEUR ARCHER : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Immunité aux sorts d'immobilisation et de charme.
+- Bonus de +1 aux jets de toucher et de dégâts avec les armes à projectiles tous les 3 niveaux.
+- Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts, les arcs longs et les arbalètes.
+- Peut lancer « Dissipation de la magie » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.. Cette capacité a un facteur de vitesse de 1 et ses effets s'appliquent au double du niveau de l'inquisiteur.
+- Peut lancer « Vision véritable » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- Au niveau 4, eut utiliser la compétence « Tir ajusté » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+TIR AJUSTÉ : Toute attaque à distance effectuée dans les 10 secondes possède les effets cumulatifs suivants (en plus des dégâts normaux) en fonction du niveau de l'Archer :
+Niveau 4 : La cible subit un malus de -1 au TAC0.
+Niveau 8 : La cible subit un malus de -1 aux jets de sauvegarde contre les sorts.
+Niveau 12 : La cible subit un malus de -1 à la Force.
+Niveau 16 : +2 aux jets de dégâts du tir.
+
+Inconvénients :
+- Ne peut utiliser la capacité « Imposition des mains ».
+- Ne peut utiliser de sorts de prêtres.
+- Ne peut repousser les morts-vivants.
+- Peut porter uniquement une armure de cuir, une besantine ou une armure de peau.
+- Ne peut être que compétent (1 étoile) dans le maniement des armes de mêlée.~
