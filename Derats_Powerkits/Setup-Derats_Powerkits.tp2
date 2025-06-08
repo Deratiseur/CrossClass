@@ -38,8 +38,8 @@ LAF fl#add_kit_ee	STR_VAR kit_name = pxVOLMORPH	END
 BEGIN @29	DESIGNATED 29	LABEL Px_Powerkits_Voleur_Tyr
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
 ADD_KIT ~pxVOLTYR~
-~pxVOLTYR            1           0           1           1           0           0           0           0~
-~pxVOLTYR            0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 1 0 1 1 1 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxVOLTYR            0           1           1           1           0           0           0           0~
+~pxVOLTYR            1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxVOLTYR            0       9       0       0       0       0~
 ~pxVOLTYR            0       0       0       0       0       0~
 ~pxVOLTYR            0       17      0       0       0       0~
@@ -56,6 +56,26 @@ SAY @21
 SAY @22
 LAF fl#add_kit_ee	STR_VAR kit_name = pxVOLTYR	END
 
+BEGIN @149	DESIGNATED 149	LABEL Px_Powerkits_Voleur_Tempus
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
+ADD_KIT ~pxVOLTEMPUS~
+~pxVOLTEMPUS            0           0           1           1           0           1           0           0~
+~pxVOLTEMPUS            0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxVOLTEMPUS            0       9       0       0       0       0~
+~pxVOLTEMPUS            0       0       0       0       0       0~
+~pxVOLTEMPUS            0       17      0       0       0       0~
+~pxVOLTEMPUS            0       15      0       0       0       0~
+~pxVOLTEMPUS            0       0       0       0       1       0       1       1       1~
+~pxVOLTEMPUS            1       1       1       0       0       0~
+~Derats_Powerkits/2da/pxpvoltm.2da~
+~K_T_H   K_T_D   K_T_G   K_T_E   K_T_HE   K_T_HL   K_T_HO~
+~0x00040000    4~
+~TH0~
+~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 * BULL03,40 * POTN52,5 POTN04,2 POTN14,5 SLNG05 SW1H28 STAF08~
+SAY @140
+SAY @141
+SAY @142
+LAF fl#add_kit_ee	STR_VAR kit_name = pxVOLTEMPUS	thiefskl = ~30 20~ END
 
 BEGIN @49	DESIGNATED 49	LABEL Px_Powerkits_Scalde_Totem
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
@@ -190,6 +210,27 @@ SAY @81
 SAY @82
 LAF fl#add_kit_ee	STR_VAR kit_name = pxSHAMJUST	END
 
+BEGIN @159	DESIGNATED 159	LABEL Px_Powerkits_Sorcier_Entropiste
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
+ADD_KIT ~pxSORCENTROP~
+~pxSORCENTROP           1           0           1           1           0           0           0           0~
+~pxSORCENTROP           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxSORCENTROP           0       0       0       9       0       9~
+~pxSORCENTROP           0       0       0       0       0       0~
+~pxSORCENTROP           0       0       0       0       0       0~
+~pxSORCENTROP           0       0       0       0       0       0~
+~pxSORCENTROP           1       1       1       1       1       1       1       1       1~
+~pxSORCENTROP           0       0       0       0       0       0~
+~Derats_Powerkits/2da/pxpsoret.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x80000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @150
+SAY @151
+SAY @152
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCENTROP	END
+
 
 BEGIN @99	DESIGNATED 99	LABEL Px_Powerkits_Kensai_Dragon
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
@@ -198,10 +239,10 @@ ADD_KIT ~pxKENSDRAG~
 ~pxKENSDRAG          4 4 0 2 4 4 4 0 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxKENSDRAG          9       0       0       0       0       0~
 ~pxKENSDRAG          0       0       0       0       0       0~
-~pxKENSDRAG          0       0       0       0       0       0~
-~pxKENSDRAG          0       0       0       0       0       0~
+~pxKENSDRAG          17      0       0       0       0       0~
+~pxKENSDRAG          15      0       0       0       0       0~
 ~pxKENSDRAG          1       1       1       1       1       1       0       0       0~
-~pxKENSDRAG          0       0       0       0       0       0~
+~pxKENSDRAG          0       1       1       1       1       0~
 ~Derats_Powerkits/2da/pxpkendr.2da~
 ~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
 ~0x0000000C 2~
@@ -221,10 +262,10 @@ ADD_KIT ~pxDEFBARB~
 ~pxDEFBARB          1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 3 1 1 1 1 1 1 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDEFBARB          9       0       0       0       0       0~
 ~pxDEFBARB          0       0       0       0       0       0~
-~pxDEFBARB          0       0       0       0       0       0~
-~pxDEFBARB          0       0       0       0       0       0~
+~pxDEFBARB          17      0       0       0       0       0~
+~pxDEFBARB          15      0       0       0       0       0~
 ~pxDEFBARB          1       1       1       1       1       1       1       1       1~
-~pxDEFBARB          0       0       0       0       0       0~
+~pxDEFBARB          0       1       1       1       1       0~
 ~Derats_Powerkits/2da/pxpdefba.2da~
 ~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
 ~0x40000000 2~
@@ -262,7 +303,7 @@ BEGIN @129	DESIGNATED 129	LABEL Px_Powerkits_Inquisiteur_Archer
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
 ADD_KIT ~pxINQUIARCH~
 ~pxINQUIARCH              1           1           1           1           1           1           1           1~
-~pxINQUIARCH              1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 5 5 2 2 1 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxINQUIARCH              1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 5 5 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2~
 ~pxINQUIARCH              12      0       9       0       13      17~
 ~pxINQUIARCH              0       0       0       0       0       0~
 ~pxINQUIARCH              0       0       0       0       0       0~
@@ -278,3 +319,24 @@ SAY @120
 SAY @121
 SAY @122
 LAF fl#add_kit_ee	STR_VAR kit_name = pxINQUIARCH	END
+
+BEGIN @139	DESIGNATED 139	LABEL Px_Powerkits_Cavalier_Chasseur_MV
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
+ADD_KIT ~pxCAVALMV~
+~pxCAVALMV              1           1           1           1           1           1           1           1~
+~pxCAVALMV              2 2 0 2 2 2 2 0 2 2 2 2 0 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2~
+~pxCAVALMV              12      0       9       0       13      17~
+~pxCAVALMV              0       0       0       0       0       0~
+~pxCAVALMV              0       0       0       0       0       0~
+~pxCAVALMV              0       0       0       0       0       0~
+~pxCAVALMV              1       0       0       0       0       0       0       0       0~
+~pxCAVALMV              0       0       0       0       0       0~
+~Derats_Powerkits/2da/pxpcavmv.2da~
+~K_P_H   K_P_D   K_P_G   K_P_E   K_P_HE   K_P_HL   K_P_HO~
+~0x00000028 6~
+~Pa0~
+~LEAT14 * HELM07 BAG24 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H39 STAF08~
+SAY @130
+SAY @131
+SAY @132
+LAF fl#add_kit_ee	STR_VAR kit_name = pxCAVALMV	END

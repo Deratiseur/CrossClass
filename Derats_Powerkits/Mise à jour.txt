@@ -1,0 +1,6 @@
+V2 :
+- Ajout de trois kits.
+- Maintenant les guerriers peuvent se jumeler. (les voleurs peuvent, pourquoi pas les guerriers ?)
+- Voleur tyréen : corrections de texte : sa capacité dure 2 rounds, pas 2 tours.
+- Voleur tyréen : Changement de son inconvénient.
+- Correction du texte en anglais pour le Défenseur Barbare.

@@ -15,7 +15,7 @@ Inconvénients :
 @29 = ~Voleur Tyreen~
 @20 = ~voleur Tyréen~
 @21 = ~Voleur Tyréen~
-@22 = ~Voleur Tyréen : cette classe est une combinaison de deux classes.
+@22 = ~VOLEUR TYRÉEN : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Peut lancer « Exaltation » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
@@ -24,10 +24,10 @@ EXALTATION : Ce sort permet au voleur d'aider et de protéger une personne autr
 
 - Peut lancer « Faveur divine » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.
 
-FAVEUR DIVINE : Ce sort confère au lanceur un bonus de +1 au toucher et aux jets de dégâts tous les 3 niveaux (maximum +6). Le sort dure 2 tours.
+FAVEUR DIVINE : Ce sort confère au lanceur un bonus de +1 au toucher et aux jets de dégâts tous les 3 niveaux (maximum +6). Le sort dure 2 rounds.
 
 Inconvénients :
-- N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
+- Ne peut se spécialiser que dans les armes de prêtre, les épées bâtardes et les épées longues.
 - Doit être d'alignement neutre bon ou loyal neutre.~
 
 @39 = ~Moine Maitre-Shi~
@@ -120,7 +120,7 @@ Avantages :
 - Niveau 12 : gagne « Convocation d'animaux III » en tant que sort de niveau 3.
 
 Inconvénients :
-- Ne peut utiliser que les bâton, le gourdin et l'arc court.~
+- Ne peut utiliser que les bâtons, les gourdins et les arcs courts.~
 
 @89 = ~Chaman justicier~
 @80 = ~chaman justicier~
@@ -177,7 +177,6 @@ SOUFFLE : le Kensaï disciple du Dragon crache une flamme d'une portée de 9 m
 - Dés de vie : D12.
 
 Inconvénients :
-- Ne peut pas se jumeler.
 - Ne peut utiliser d'armes à distance.
 - Ne peut porter d'armure.
 - Ne peut porter de gantelets ou de bracelets.
@@ -204,7 +203,6 @@ RAGE : Pendant 5 rounds, la rage confère un bonus de +4 en Constitution et en 
 - Dés de vie : d12
 
 Inconvénients :
-- Ne peut pas se jumeler.
 - Ne peut pas porter d'armure plus lourde que l'armure feuilletée.
 - Ne peut qu'être compétant avec les autres armes.~
 
@@ -247,3 +245,51 @@ Inconvénients :
 - Ne peut repousser les morts-vivants.
 - Peut porter uniquement une armure de cuir, une besantine ou une armure de peau.
 - Ne peut être que compétent (1 étoile) dans le maniement des armes de mêlée.~
+
+@139 = ~Cavalier chasseur de morts-vivants~
+@130 = ~cavalier chasseur de morts-vivants~
+@131 = ~Cavalier chasseur de morts-vivants~
+@132 = ~CAVALIER CHASSEUR DE MORTS-VIVANTS : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +3 aux jets de toucher et de dégâts contre les créatures démoniaques, draconiques ou mort-vivantes.
+- Peut lancer « Apaisement » une fois par jour par niveau.
+- Immunité à l'immobilisation, au drain de niveau, au poison, au charme, à la terreur et aux pertes de moral.
+- 20 % de résistance au feu et à l'acide.
+
+Inconvénients :
+- Ne peut pas utiliser d'armes à projectiles.
+- Ne peut pas utiliser la capacité « Imposition des mains ».~
+
+@149 = ~Voleur Tempuseen~
+@140 = ~voleur Tempuséen~
+@141 = ~Voleur Tempuséen~
+@142 = ~VOLEUR TEMPUSÉEN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut lancer « Sainte puissance » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+SAINTE PUISSANCE : Grâce à ce sort, le lanceur acquiert la force et les talents d'un guerrier de même niveau. Ainsi, sa force passe à 18/00, même si elle est d'habitude plus élevée, son TAC0 devient celui d'un guerrier de même niveau et il obtient 1 point de vie temporaire supplémentaire par niveau. Ces effets se prolongent pendant un round par niveau.
+
+- Peut lancer « Chaos de la bataille » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.
+
+CHAOS DE LA BATAILLE : ce sort accorde un bonus aux alliés et applique des malus aux adversaires du lanceur dans une zone de 9 mètres de rayon centrée sur lui. Chaos de la bataille dure 1 tour et affecte au hasard la Classe d'armure, les points de vie, le TAC0, les jets de sauvegarde ou la chance des cibles. L'amplitude de l'effet débute à 1 (5 en ce qui concerne les points de vie), et augmente d'1 point (5 points en ce qui concerne les points de vie) tous les 6 niveaux du lanceur.
+
+Inconvénients :
+- N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
+- Doit être d'alignement chaotique bon, chaotique neutre, chaotique mauvais ou neutre strict.~
+
+@159 = ~Ensorceleur entropiste ~
+@150 = ~ensorceleur entropiste~
+@151 = ~Ensorceleur entropiste~
+@152 = ~ENSORCELEUR ENTROPISTE : cette classe est une combinaison de deux classes.
+
+Avantages : 
+- Peut mémoriser un sort de plus par niveau.
+- Connaît les sorts « Rupture hasardeuse de Nahal », « Bouclier du chaos » et  « Bouclier du chaos amélioré ».
+
+Inconvénients :
+- Lorsque le sorcier entropiste  lance un sort, le niveau auquel le sort est lancé peut varier entre cinq niveaux en-dessous et cinq niveaux au-dessus de son niveau.
+- Chaque fois que le sorcier entropiste lance un sort, il a 5 % de chances d'engendrer un hiatus entropique.
+
+HIATUS ENTROPIQUE : Un hiatus entropique génère un effet complètement aléatoire à la place des effets du sort initialement lancé. Ses effets peuvent être bénéfiques ou au contraire, néfastes pour l'entropiste et ses alliés.~352
