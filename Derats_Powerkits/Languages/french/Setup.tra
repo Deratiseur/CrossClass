@@ -46,10 +46,10 @@ SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se d
 Inconvénients :
 - La classe d'armure n'augmente que tous les 3 niveaux.~
 
-@49 = ~Skalde totemique~
-@40 = ~skalde totémique~
-@41 = ~Skalde totémique~
-@42 = ~SKALDE TOTÉMIQUE : cette classe est une combinaison de deux classes.
+@49 = ~Scalde totemique~
+@40 = ~scalde totémique~
+@41 = ~Scalde totémique~
+@42 = ~SCALDE TOTÉMIQUE : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Bonus de +1 aux jets de toucher et de dégâts.
@@ -220,16 +220,16 @@ Avantages :
 Inconvénients :
 - Ne peut pas repousser les morts-vivants.~
 
-@129 = ~Inquisiteur archer~
-@120 = ~inquisiteur archer~
-@121 = ~Inquisiteur archer~
-@122 = ~INQUISITEUR ARCHER : cette classe est une combinaison de deux classes.
+@129 = ~Archer inquisiteur~
+@120 = ~archer inquisiteur~
+@121 = ~Archer inquisiteur~
+@122 = ~ARCHER INQUISITEUR : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Immunité aux sorts d'immobilisation et de charme.
 - Bonus de +1 aux jets de toucher et de dégâts avec les armes à projectiles tous les 3 niveaux.
 - Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts, les arcs longs et les arbalètes.
-- Peut lancer « Dissipation de la magie » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.. Cette capacité a un facteur de vitesse de 1 et ses effets s'appliquent au double du niveau de l'inquisiteur.
+- Peut lancer « Dissipation de la magie » une fois par jour, puis une fois supplémentaire tous les 4 niveaux. Cette capacité a un facteur de vitesse de 1 et ses effets s'appliquent au double du niveau de l'inquisiteur.
 - Peut lancer « Vision véritable » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 - Au niveau 4, eut utiliser la compétence « Tir ajusté » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
@@ -240,9 +240,8 @@ Niveau 12 : La cible subit un malus de -1 à la Force.
 Niveau 16 : +2 aux jets de dégâts du tir.
 
 Inconvénients :
-- Ne peut utiliser la capacité « Imposition des mains ».
-- Ne peut utiliser de sorts de prêtres.
-- Ne peut repousser les morts-vivants.
+- Ne peut pas lancer de sorts.
+- Ne pas se camoufler.
 - Peut porter uniquement une armure de cuir, une besantine ou une armure de peau.
 - Ne peut être que compétent (1 étoile) dans le maniement des armes de mêlée.~
 
@@ -279,7 +278,7 @@ Inconvénients :
 - N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
 - Doit être d'alignement chaotique bon, chaotique neutre, chaotique mauvais ou neutre strict.~
 
-@159 = ~Ensorceleur entropiste ~
+@159 = ~Ensorceleur entropiste~
 @150 = ~ensorceleur entropiste~
 @151 = ~Ensorceleur entropiste~
 @152 = ~ENSORCELEUR ENTROPISTE : cette classe est une combinaison de deux classes.
@@ -292,4 +291,33 @@ Inconvénients :
 - Lorsque le sorcier entropiste  lance un sort, le niveau auquel le sort est lancé peut varier entre cinq niveaux en-dessous et cinq niveaux au-dessus de son niveau.
 - Chaque fois que le sorcier entropiste lance un sort, il a 5 % de chances d'engendrer un hiatus entropique.
 
-HIATUS ENTROPIQUE : Un hiatus entropique génère un effet complètement aléatoire à la place des effets du sort initialement lancé. Ses effets peuvent être bénéfiques ou au contraire, néfastes pour l'entropiste et ses alliés.~352
+HIATUS ENTROPIQUE : Un hiatus entropique génère un effet complètement aléatoire à la place des effets du sort initialement lancé. Ses effets peuvent être bénéfiques ou au contraire, néfastes pour l'entropiste et ses alliés.~
+
+@169 = ~Ensorceleur moine~
+@160 = ~ensorceleur moine~
+@161 = ~Ensorceleur moine~
+@162 = ~ENSORCELEUR MOINE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut progresser (une étoile) dans les styles de combat à une main, à deux mains et à deux armes.
+- Bonus de +2 points en vitesse de déplacement, +1 tous les 5 niveaux. 
+- Gagne 1/2 attaque par round tous les 3 niveaux, maximum +3 attaques par round.
+- Gagne +1 dégât de mêlée et TAC0 tous les 3 niveaux, maximum +7.
+- Bonus de +2 aux jets de sauvegarde contre les Sorts. 
+- Parade de projectiles : +1 à la Classe d'Armure contre les projectiles par tranche de 3 niveaux. 
+- Sa Classe d'Armure initiale est de 9 au niveau 1, et augmente ensuite de 1 tous les 2 niveaux. 
+- Niveau 5 : Immunité à la maladie, à la hâte et au ralentissement. 
+- Niveau 7 : Peut utiliser « Imposition des mains » pour guérir 2 points de vie par niveau. 
+- Niveau 8 : Bonus de -1 au facteur de vitesse. 
+- Niveau 9 : Bonus de +1 aux jets de sauvegarde et immunité aux charmes. 
+- Niveau 11 : Immunité au poison. 
+- Niveau 12 : Bonus de -1 au facteur de vitesse. 
+- Niveau 14 : 3 % de résistance à la magie par niveau (démarre avec 42 % au niveau 14). 
+- Niveau 20 : Immunité aux armes non-magiques. 
+- Doit être d'alignement loyal. 
+- Dés de vie : d6.
+
+Inconvénients :
+- Ne peut pas utiliser d'armes à projectiles.
+- Ne connaît pas le Coup étourdissant et la Paume Vibratoire.
+- Lance deux sorts de moins par niveau et par jour.~

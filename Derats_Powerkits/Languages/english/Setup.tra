@@ -215,10 +215,10 @@ Advantages:
 Disadvantages:
 – May not turn undead.~
 
-@129 = ~Archer Inquisitor~
-@120 = ~archer inquisitor~
-@121 = ~Archer Inquisitor~
-@122 = ~ARCHER INQUISITOR: this class is a combination of two classes.
+@129 = ~Inquisitor Archer~
+@120 = ~inquisitor Archer~
+@121 = ~Inquisitor Archer~
+@122 = ~INQUISITOR ARCHER: this class is a combination of two classes.
 
 Avantages :
 – Immune to hold and charm.
@@ -235,9 +235,8 @@ CALLED SHOT: All successful ranged attacks within the next 10 seconds have the f
  16th level: +2 bonus to damage roll.
  
 Disadvantages:
-– May not turn undead.
-– May not use the Lay On Hands ability. 
-– May not cast priest spells.
+– May not hide in shadows.
+– May not cast spells.
 – May not wear armor heavier than studded leather.
 – May only become Proficient (one slot) with melee weapons.~
 
@@ -288,3 +287,34 @@ Disadvantages:
 - Upon casting a spell, there is a 5% chance of incurring a wild surge.
 
 WILD SURGE: A wild surge generates a completely random magical effect from the spell being cast. Its effects may be either beneficial or detrimental to the Wild Sorcerer and <PRO_HISHER> allies.~
+
+@169 = ~Monk Sorcerer~
+@160 = ~Monk sorcerer~
+@161 = ~Monk Sorcerer~
+@162 = ~MONK SORCERER: this class is a combination of two classes.
+
+
+Advantages: 
+- Can progress (one slotr) in one-handed, two-handed and two-weapon fighting styles.
+– Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.
+- Gains 1/2 attack per round every 3 levels, maximum +3 attacks per round.
+- Gains +1 melee damage and THAC0 every 3 levels, maximum +7.
+– Receives a +2 bonus to Saving Throws vs. Spell.
+– Deflect Missiles: +1 bonus to AC vs. missile attacks every 3 levels.
+– Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 2 levels.
+– 5th level: Becomes immune to all diseases and cannot be slowed or hasted.
+– 7th level: May use the Lay On Hands ability on <PRO_HIMHER>self to heal 2 Hit Points per level.
+– 8th level: Gains a -1 bonus to Speed Factor.
+– 9th level: Gains a +1 bonus to all Saving Throws and becomes immune to charm.
+– 11th level: Becomes immune to poison.
+– 12th level: Gains another -1 bonus to Speed Factor.
+– 14th level: Gains 3% Magic Resistance per level (starting with 42% at 14th level).
+– 20th level: Becomes immune to non-magical weapons.
+– Alignment restricted to lawful.
+– Hit Die: d6
+
+Disadvantages:
+– May not use missile weapons.
+– May not use the Stunning Blow and Quivering Palm abilities.
+– May cast two fewer spell per level per day.~
+
