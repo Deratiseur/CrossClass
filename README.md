@@ -17,11 +17,15 @@
 
 Des combinaisons de kits vanilla pour des résultats détonants :
 
-- Voleur métamorphe
+- Kensai disciple du dragon
 
-- Voleur Tyréen
+- Défenseur barbare
 
-- Skalde totémique
+- Archer Inquisiteur
+
+- Cavalier chasseur de morts-vivants
+
+- Clerc bretteur
 
 - Moine assassin
 
@@ -29,41 +33,60 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Moine Maître-Shi (Maître lames)
 
+- Voleur métamorphe
+
+- Voleur Tyréen
+
+- Voleur Tempuséen  
+
+- Skalde totémique
+
+- Ensorceleur entropiste 
+
+- Ensorceleur moine
+
 - Chaman belluaire 
 
 - Chaman justicier
 
-- Kensai disciple du dragon
-
-- Défenseur barbare
-
-- Clerc bretteur
-
-- Inquisiteur archer
 
 -------------------------
 
  vanilla kit combinations for cheated results:
+
+- Dragon Disciple Kensai
+
+- Barbarian Defender
+
+- Inquisitor Archer
+
+- Undead hunter cavalier
+
+- Swashbuckler Cleric
+
+- - Assassin Monk
+
+- Wizard slayer Monk
+
+- Master-Shi Monk (Blades)
  
 - Shapeshifter Thief
 
 - Tyrran Thief
 
+- Tempuran Thief
+
 - Totemic Skald
 
-- Assassin Monk
+- Wild Sorcerer
 
-- Wizard slayer Monk
-
-- Master-Shi Monk (Blades)
+- Monk sorcerer
 
 - Beast master Shaman
 
 - Avenger Shaman
 
-- Dragon Disciple Kensai
 
-- Barbarian Defender
 
 - Swashbuckler Cleric
 
