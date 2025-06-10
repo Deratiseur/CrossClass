@@ -4,3 +4,8 @@ V2 :
 - Voleur tyréen : corrections de texte : sa capacité dure 2 rounds, pas 2 tours.
 - Voleur tyréen : Changement de son inconvénient.
 - Correction du texte en anglais pour le Défenseur Barbare.
+
+V3 :
+- Ajout du kit Ensorceleur moine.
+- Inversion : l'Inquisiteur archer devient Archer inquisiteur (un paladin sans épée sanctifiée ?)
+- Réorganisation de l'ordre d'installation des composants pour les mettre dans l'ordre des classes.
