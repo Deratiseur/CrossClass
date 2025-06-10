@@ -64,7 +64,7 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Swashbuckler Cleric
 
-- - Assassin Monk
+- Assassin Monk
 
 - Wizard slayer Monk
 
