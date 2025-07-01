@@ -52,7 +52,7 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 -------------------------
 
- vanilla kit combinations for cheated results:
+ vanilla kits combinations for cheated results:
 
 - Dragon Disciple Kensai
 
