@@ -1,6 +1,6 @@
 BACKUP ~Derats_Powerkits/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v1~
+VERSION ~v4~
 
 ALWAYS
 	INCLUDE ~Derats_powerkits/2da/fl#add_kit_ee.tpa~
@@ -56,6 +56,28 @@ SAY @100
 SAY @101
 SAY @102
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDEFBARB	hpclass = ~hpbarb~	END
+
+BEGIN @179	DESIGNATED 179	LABEL Px_Powerkits_Traqueur_Primes
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
+COPY_EXISTING ~SPCL417.spl~	~override/pxdranp.spl~	WRITE_BYTE 0x9e 7
+ADD_KIT ~pxTRAQPRIME~
+~pxTRAQPRIME              1           1           1           1           1           1           1           1~
+~pxTRAQPRIME              2 2 2 0 2 2 2 2 2 2 2 2 0 2 2 2 2 2 0 0 2 2 2 0 2 2 2 2 0 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~pxTRAQPRIME              13      13      14      0       14      0~
+~pxTRAQPRIME              0       0       0       0       0       0~
+~pxTRAQPRIME              17      17      0       0       17      0~
+~pxTRAQPRIME              15      15      0       0       17      0~
+~pxTRAQPRIME              1       0       0       1       0       0       1       0       0~
+~pxTRAQPRIME              0       1       0       0       0       0~
+~Derats_Powerkits/2da/pxpranpg.2da~
+~K_R_H   K_R_D   K_R_G   K_R_E   K_R_HE   K_R_HL   K_R_HO~
+~0x00010000 12~
+~Ra0~
+~LEAT14 * HELM07 BAG24 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H39 STAF08~
+SAY @170
+SAY @171
+SAY @172
+LAF fl#add_kit_ee	STR_VAR kit_name = pxTRAQPRIME	END
 
 BEGIN @129	DESIGNATED 129	LABEL Px_Powerkits_Inquisiteur_Archer
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009

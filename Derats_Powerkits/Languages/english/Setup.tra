@@ -289,10 +289,9 @@ Disadvantages:
 WILD SURGE: A wild surge generates a completely random magical effect from the spell being cast. Its effects may be either beneficial or detrimental to the Wild Sorcerer and <PRO_HISHER> allies.~
 
 @169 = ~Monk Sorcerer~
-@160 = ~Monk sorcerer~
+@160 = ~monk sorcerer~
 @161 = ~Monk Sorcerer~
 @162 = ~MONK SORCERER: this class is a combination of two classes.
-
 
 Advantages: 
 - Can progress (one slotr) in one-handed, two-handed and two-weapon fighting styles.
@@ -318,3 +317,26 @@ Disadvantages:
 – May not use the Stunning Blow and Quivering Palm abilities.
 – May cast two fewer spell per level per day.~
 
+@179 = ~Bounty hunter Stalker~
+@170 = ~bounty hunter stalker~
+@171 = ~Bounty hunter Stalker~
+@172 = ~BOUNTY HUNTER STALKER: this class is a combination of two classes.
+
+Advantages:
+– +15% to Stealth and Set Traps.
+- His Set Trap score is equal to his Stealth score.
+– May use Backstab ability, although for a lower damage multiplier than Thieves:
+  Level 1-8: x2
+  Level 9-16: x3
+  Level 17+: x4
+- Can set traps like a thief.
+– May use the Set Special Snare ability once per day in addition to the normal Thief's Set Snare. Gains one use at level 1 and an additional use every 5 levels thereafter.
+
+SET SPECIAL SNARE: Set a trap in the chosen location when no hostile creatures are in sight. Traps grow more powerful with the Bounty Hunter's level and can only be triggered by enemies.
+  1st level: Deals 3d8+5 missile damage and slows target for 5 rounds if a Save vs. Spell with a -4 penalty is failed.
+  11th level: Deals 4d8+5 missile damage and holds target for 5 rounds if a Save vs. Spell with a -1 penalty is failed.
+  16th level: Erects an Otiluke's Resilient Sphere around the target for 7 rounds if a Save vs. Spell is failed.
+  21st level: Mazes the target.
+
+Disadvantages:
+– May not wear armor heavier than studded leather.~

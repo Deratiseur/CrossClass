@@ -321,3 +321,27 @@ Inconvénients :
 - Ne peut pas utiliser d'armes à projectiles.
 - Ne connaît pas le Coup étourdissant et la Paume Vibratoire.
 - Lance deux sorts de moins par niveau et par jour.~
+
+@179 = ~Traqueur chasseur de primes~
+@170 = ~Traqueur chasseur de primes~
+@171 = ~Traqueur chasseur de primes~
+@172 = ~TRAQUEUR CHASSEUR DE PRIMES : cette classe est une combinaison de deux classes.
+
+Avantages :
+- +15 % en Furtivité et Pose de pièges.
+- Son score de Pose de piège est égal à son score de Furtivité.
+- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindres par rapport aux voleurs :
+  Niveau 1-8 : x2
+  Niveau 9-16 : x3
+  Niveau 17+ : x4
+- Peut poser des pièges comme un voleur.
+- Peut poser des pièges spéciaux en plus de ceux utilisés par les voleurs. Peut utiliser cette compétence une fois par jour au niveau 1 et une fois supplémentaire tous les 5 niveaux.
+
+POSE DE PIÈGES SPÉCIAUX : Permet de poser un piège à l'endroit choisi lorsqu'aucune créature hostile n'est en vue. La puissance des pièges s'améliore à mesure que le traqueur chasseur de primes augmente de niveau et ils ne peuvent être déclenchés que par les ennemis.
+  Niveau 1 : Le piège inflige 3d8 +5 dégâts (projectile) et ralentit la victime pendant 5 rounds si elle échoue à un jet de sauvegarde contre les sorts à -4.
+  Niveau 11 : Le piège inflige 4d8 +5 dégâts (projectile) et immobilise la victime pendant 5 rounds si elle échoue à un jet de sauvegarde contre les sorts à -1.
+  Niveau 16 : Le piège déclenche le sort « Sphère résistante d'Otiluke » ciblé sur la victime pendant 7 rounds si elle échoue à un jet de sauvegarde contre les sorts.
+  Niveau 21 : Le piège déclenche le sort « Labyrinthe » sur la victime.
+
+Désavantages :
+- Ne peut pas porter d'armure plus épaisse que celle de cuir clouté.~

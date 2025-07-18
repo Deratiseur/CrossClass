@@ -9,3 +9,6 @@ V3 :
 - Ajout du kit Ensorceleur moine.
 - Inversion : l'Inquisiteur archer devient Archer inquisiteur (un paladin sans épée sanctifiée ?)
 - Réorganisation de l'ordre d'installation des composants pour les mettre dans l'ordre des classes.
+
+v4 :
+- Ajout du kit Traqueur chasseur de primes.
