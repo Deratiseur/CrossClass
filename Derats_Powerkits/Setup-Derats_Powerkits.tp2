@@ -59,7 +59,7 @@ LAF fl#add_kit_ee	STR_VAR kit_name = pxDEFBARB	hpclass = ~hpbarb~	END
 
 BEGIN @179	DESIGNATED 179	LABEL Px_Powerkits_Traqueur_Primes
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
-COPY_EXISTING ~SPCL417.spl~	~override/pxdranp.spl~	WRITE_BYTE 0x9e 7
+COPY ~Derats_Powerkits/Copy/pxdranp.spl~	~override~
 ADD_KIT ~pxTRAQPRIME~
 ~pxTRAQPRIME              1           1           1           1           1           1           1           1~
 ~pxTRAQPRIME              2 2 2 0 2 2 2 2 2 2 2 2 0 2 2 2 2 2 0 0 2 2 2 0 2 2 2 2 0 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
