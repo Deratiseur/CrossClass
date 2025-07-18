@@ -23,6 +23,8 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Archer Inquisiteur
 
+- Traqueur chasseur de primes
+
 - Cavalier chasseur de morts-vivants
 
 - Clerc bretteur
@@ -59,6 +61,8 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 - Barbarian Defender
 
 - Inquisitor Archer
+
+- Bounty hunter Stalker
 
 - Undead hunter cavalier
 
