@@ -10,7 +10,7 @@ Avantages :
 
 Inconvénients :
 - Alignement limité à Neutre strict.
-- Ne peut porter aucune armure.~
+- Ne peut porter aucune armure, même avec la HLA "Utilisation d'objets".~
 
 @29 = ~Voleur Tyreen~
 @20 = ~voleur Tyréen~
@@ -345,3 +345,223 @@ POSE DE PIÈGES SPÉCIAUX : Permet de poser un piège à l'endroit choisi lorsq
 
 Désavantages :
 - Ne peut pas porter d'armure plus épaisse que celle de cuir clouté.~
+
+@189 = ~Voleur kensai~
+@180 = ~voleur kensaï~
+@181 = ~Voleur kensaï~
+@182 = ~VOLEUR KENSAÏ : cette classe est une combinaison de deux classes.
+
+Avantages : 
+- Peut se spécialiser avec toutes les armes de voleur et maximiser tous les styles de combat.
+- Bonus de -2 à la classe d'armure.
+- Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.
+- Bonus de -1 au facteur de vitesse tous les 4 niveaux.
+- Peut utiliser la capacité « Kaï » une fois par jour. Obtiens une utilisation supplémentaire tous les 4 niveaux.
+
+KAÏ : Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.
+
+Inconvénients :
+- Ne peut utiliser d'armes à distance.
+- Ne peut porter ni armure ni gantelets ou bracelets, même avec la HLA "Utilisation d'objets".
+- N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
+- Alignement restreint aux non chaotiques.~
+
+@199 = ~Traqueur assassin~
+@190 = ~traqueur assassin~
+@191 = ~Traqueur assassin~
+@192 = ~TRAQUEUR ASSASSIN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +1 aux jets de toucher et de dégâts.
+- +20 % en Furtivité et Se cacher dans l'ombre.
+- Peut utiliser « Attaque sournoise » :
+  Niveau 1-6 : x2
+  Niveau 7-12 : x3
+  Niveau 13-18 : x4
+  Niveau 19-24 : x5
+  Niveau 25-30 : x6
+  Niveau 31+ : x7
+- Peut utiliser « Arme empoisonnée » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
+
+ARME EMPOISONNÉE :
+Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectuée qu'une fois par round et les dégâts de poison varient selon le niveau du personnage :
+
+1er : la cible subit 1 dégât de poison par seconde pendant 6 secondes (jet de sauvegarde contre la mort +1 pour annuler)
+5e : la cible subit 1 dégât de poison par seconde pendant 12 secondes (jet de sauvegarde contre la mort pour annuler) et subit immédiatement 2 dégâts de poison (pas de jet de sauvegarde)
+9e : la cible subit 1 dégât de poison par seconde pendant 18 secondes (jet de sauvegarde contre la mort à -1 pour annuler) et subit immédiatement 4 dégâts de poison (pas de jet de sauvegarde)
+13e : la cible subit 1 dégât de poison par seconde pendant 24 secondes (jet de sauvegarde contre la mort à -2 pour annuler) et subit immédiatement 6 dégâts de poison (pas de jet de sauvegarde)
+
+Inconvénients :
+- Ne peut pas lancer de sorts.~
+
+@209 = ~Moine inquisiteur~
+@200 = ~moine inquisiteur~
+@201 = ~Moine inquisiteur~
+@202 = ~MOINE INQUISITEUR : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut lancer « Dissipation de la magie » une fois par jour (une utilisation au niveau 1, puis une utilisation supplémentaire tous les 4 niveaux). Cette capacité a un facteur de vitesse de 1 et ses effets s'appliquent au double du niveau de l'inquisiteur.
+- Peut lancer « Vision véritable » une fois par jour tous les 4 niveaux (une utilisation au niveau 1).
+- Immunité aux sorts d'immobilisation et de charme.
+
+Inconvénients :
+- Ne peut utiliser la capacité Imposition des mains.
+- Ne peut utiliser la capacité Coup étourdissant.
+- Ne peut utiliser la capacité Paume vibratoire.~
+
+@219 = ~Voleur maitre-lames~
+@210 = ~voleur maître-lames~
+@211 = ~Voleur maître-lames~
+@212 = ~VOLEUR MAÎTRE-LAMES : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut attribuer 3 étoiles dans le style de combat à deux armes.
+- Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour. Obtiens une utilisation supplémentaire pour chaque tous les 4 niveaux.
+
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
+
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+
+Inconvénients :
+- N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.~
+
+@229 = ~Maitre lame lathandrien~
+@220 = ~maître lame lathandrien~
+@221 = ~Maître lame lathandrien~
+@222 = ~MAÎTRE LAME LATHANDRIEN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut attribuer 3 étoiles dans le style de combat à deux armes.
+- Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
+
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
+
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+
+- Peut utiliser « Immobilisation des morts-vivants » une fois par jour au niveau 1, puis une fois supplémentaire tous les 5 niveaux.
+- Peut utiliser « Bénédiction de Lathandre » une fois par jour au niveau 1, puis une fois supplémentaire tous les 10 niveaux.
+
+BÉNÉDICTION DE LATHANDRE : Ce sort dure 1 round par niveau et confère +1 aux jets d'attaque, de dégâts et de sauvegarde, ainsi qu'une attaque supplémentaire par round. Il protège également contre le drain de niveau.
+
+Inconvénients :
+- Ne peut être compétent qu'avec les armes utilisables par les clercs.
+- Score de Connaissances divisé par 2.
+- Score de Vol à la tire divisé par 2.
+- Doit être d'alignement loyal bon, neutre bon, chaotique bon ou neutre strict.~
+
+@239 = ~Moine de la lune noire traqueur~
+@230 = ~moine de la lune noire traqueur~
+@231 = ~Moine de la lune noire traqueur~
+@232 = ~MOINE DE LA LUNE NOIRE TRAQUEUR : cette classe est une combinaison de deux classes.
+
+Avantages :
+- +20 % en Furtivité et Se cacher dans l'ombre.
+- Peut lancer la capacité Poing de glace une fois par jour. Il gagne une utilisation au niveau 1, puis une autre tous les 4 niveaux.
+
+POING DE GLACE : lorsque cette capacité est activée, les poings du Moine de la Lune Noire se nimbent d'une carapace de glace. Pendant 1 tour, les attaques à mains nues du moine infligent 2 points de dégâts de froid supplémentaires.
+
+- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindres par rapport aux voleurs :
+  Niveau 1-8 : x2
+  Niveau 9-16 : x3
+  Niveau 17+ : x4
+
+- Niveau 1 : peut lancer Cécité une fois par jour.
+- Niveau 3 : peut lancer Flou une fois par jour.
+- Niveau 7 : peut lancer Toucher vampirique une fois par jour.
+- Niveau 11 : peut lancer Image miroir une fois par jour.
+- Niveau 14 : Peut lancer Hâte, Protection contre les projectiles normaux et Déviation des sorts mineure une fois par jour.
+
+Inconvénients :
+- Doit être d'alignement loyal mauvais.
+- Ne peut investir des points dans la capacité Détection des illusions.
+- Ne peut utiliser la capacité Imposition des mains.
+- Ne peut utiliser la capacité Coup étourdissant.
+- Ne peut porter de gantelets ou de bracelets.~
+
+@249 = ~Invocateur talotien~
+@240 = ~invocateur talotien~
+@241 = ~Invocateur talotien~
+@242 = ~INVOCATEUR TALOTIEN : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bénéficie d'un bonus de +15 % pour l'apprentissage d'un sort de l'école de l'Invocation.
+- Bénéficie d'un bonus de +2 pour les jets de sauvegarde contre les sorts de l'école de l'Invocation.
+- Les cibles souffrent d'un malus de -2 pour les jets de sauvegarde contre les sorts de l'école de l'Invocation.
+- Peut utiliser « Éclair » une fois par jour à partir du niveau 1, puis une fois supplémentaire tous les 5 niveaux.
+- Peut utiliser « Bouclier des tempêtes » une fois par jour à partir du niveau 1, puis une fois supplémentaire tous les 10 niveaux.
+
+BOUCLIER DES TEMPÊTES : Ce sort dure 1 round par niveau du lanceur de sorts. Il le protège contre l'électricité, le feu, le froid et les projectiles non magiques.
+
+Inconvénients :
+- Ne peut apprendre ni lancer les sorts des écoles de l'Enchantement.
+- Souffre d'un malus de -15 % pour apprendre des parchemins des autres écoles.
+- -4 en constitution.
+- Ne peut utiliser que bâton et fronde.
+- Doit être d'alignement neutre mauvais, chaotique mauvais ou chaotique neutre.~
+
+@259 = ~Chaman archer~
+@250 = ~chaman archer~
+@251 = ~Chaman archer~
+@252 = ~CHAMAN ARCHER : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +1 aux jets de toucher et de dégâts avec les armes à projectiles tous les 3 niveaux.
+- Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts.
+- Peut utiliser la compétence « Tir ajusté » une fois par jour tous les 4 niveaux à partir du niveau 4.
+
+TIR AJUSTÉ : Toute attaque à distance effectuée dans les 10 secondes possède les effets cumulatifs suivants (en plus des dégâts normaux) en fonction du niveau de l'Archer :
+Niveau 4 : La cible subit un malus de -1 au TAC0.
+Niveau 8 : La cible subit un malus de -1 aux jets de sauvegarde contre les sorts.
+Niveau 12 : La cible subit un malus de -1 à la Force.
+Niveau 16 : +2 aux jets de dégâts du tir.
+
+Inconvénients :
+- Dé de vie : D6.~
+
+@269 = ~Metamorphe berserker~
+@260 = ~métamorphe berserker~
+@261 = ~Métamorphe berserker~
+@262 = ~METAMORPHE BERSERKER : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Peut se métamorphoser en loup-garou une fois par jour, puis une fois supplémentaire tous les 2 niveaux.
+- Niveau 13 : Peut se métamorphoser en loup-garou majeur une fois par jour.
+- Peut utiliser « Furie » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
+
+FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé à charme, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
+
+Inconvénients :
+- Essoufflement après la Furie : -2 aux jets de toucher et de dégâts et +2 à la Classe d'Armure.
+- Ne peut pas utiliser d'armes à distance.
+- Ne peut porter aucune armure.
+- Ne peut se métamorphoser en d'autres formes en raison de l'effort requis pour maintenir l'équilibre de sa forme primaire.~
+
+@279 = ~Chaman skalde~
+@270 = ~chaman skalde~
+@271 = ~Chaman skalde~
+@272 = ~CHAMAN SKALDE : cette classe est une combinaison de deux classes.
+
+Avantages :
+- Bonus de +1 aux jets de toucher et de dégâts.
+- Sa dance a des effets différents de celle du chaman et varie en fonction de son niveau :
+ Niveau 1-14 : Les alliés gagnent un bonus de +2 aux jets de toucher et de dégâts et +2 à la CA.
+ Niveau 15-19 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur.
+ Niveau 20 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur, l'étourdissement et la confusion.
+
+Inconvénients :
+- Sa danse n'invoque pas les esprits.~
+
+@289 = ~Barde chaman~
+@280 = ~barde chaman~
+@281 = ~Barde chaman~
+@282 = ~BARDE CHAMAN : cette classe est une combinaison de deux classes.
+
+Avantages : 
+- Le Barde chaman a un accès immédiat à un nombre de sorts spécifiques à sa classe, qu'il peut lancer comme n'importe quel autre sort : Protection de l'esprit, Brouillard putride, Lucidité spirituelle, Feu spirituel, Rappel de l'esprit, Verrou spirituel et Portail éthéré.
+- Il peut utiliser le chant chamanique à volonté.
+
+CHANT CHAMANIQUE : Ce chant reproduit l'effet de la dance chamanique mais n'interdit pas au barde de bouger et ne lui impose pas de malus de Classe d'armure.
+
+Inconvénients :
+- Il ne peut utiliser que les armes suivantes : dague, gourdin, lance, hache, bâton, fléchette, fronde et arc court.
+- Il doit être d'alignement neutre bon, neutre strict ou neutre mauvais.~
