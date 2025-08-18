@@ -25,9 +25,13 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Traqueur chasseur de primes
 
+- Traqueur assassin
+
 - Cavalier chasseur de morts-vivants
 
 - Clerc bretteur
+
+- Métamorphe berserker
 
 - Moine assassin
 
@@ -35,13 +39,27 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Moine Maître-Shi (Maître lames)
 
+- Moine inquisiteur
+
+- Moine de la Lune Noire traqueur
+
 - Voleur métamorphe
 
 - Voleur Tyréen
 
-- Voleur Tempuséen  
+- Voleur Tempuséen
+
+- Voleur Maitre-lames
+
+- Voleur kensaï
+
+- Barde chaman
 
 - Skalde totémique
+
+- Maître lames Lathandrien
+
+- Invocateu Talotien
 
 - Ensorceleur entropiste 
 
@@ -51,6 +69,9 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Chaman justicier
 
+- Chaman archer
+
+- Chaman skalde
 
 -------------------------
 
@@ -64,15 +85,23 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Bounty hunter Stalker
 
-- Undead hunter cavalier
+- Assassin Stalker
+
+- Undead hunter Cavalier
 
 - Swashbuckler Cleric
+
+- Berserker shapeshifter
 
 - Assassin Monk
 
 - Wizard slayer Monk
 
 - Master-Shi Monk (Blades)
+
+- Inquisitor Monk
+
+- Stalker Dark Moon monk
  
 - Shapeshifter Thief
 
@@ -80,7 +109,17 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Tempuran Thief
 
+- Blades thief
+
+- Kensai thief
+
+- Shaman bard
+
 - Totemic Skald
+
+- Lathanderian blades
+
+- Talassan invoker
 
 - Wild Sorcerer
 
@@ -89,6 +128,10 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 - Beast master Shaman
 
 - Avenger Shaman
+
+- Archer shaman
+
+- Skald shaman
 
 
 
