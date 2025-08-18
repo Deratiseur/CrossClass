@@ -91,7 +91,7 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Swashbuckler Cleric
 
-- Berserker shapeshifter
+- Berserker Shapeshifter
 
 - Assassin Monk
 
@@ -101,7 +101,7 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Inquisitor Monk
 
-- Stalker Dark Moon monk
+- Stalker Dark Moon Monk
  
 - Shapeshifter Thief
 
@@ -109,17 +109,17 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Tempuran Thief
 
-- Blades thief
+- Blades Thief
 
-- Kensai thief
+- Kensai Thief
 
-- Shaman bard
+- Shaman Bard
 
 - Totemic Skald
 
-- Lathanderian blades
+- Lathanderian Blades
 
-- Talassan invoker
+- Talassan Invoker
 
 - Wild Sorcerer
 
@@ -129,9 +129,9 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Avenger Shaman
 
-- Archer shaman
+- Archer Shaman
 
-- Skald shaman
+- Skald Shaman
 
 
 
