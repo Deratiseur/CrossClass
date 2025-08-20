@@ -8,7 +8,7 @@
 **Autor** : **Deratiseur**
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=34909)  
-[Link to the beamdog forum](https://forums.beamdog.com/discussion/88141/mod-illumisfhityroc-an-alien-in-bgee-and-iwdee#first)  
+[Link to the beamdog forum and completes descriptions](https://forums.beamdog.com/discussion/88141/mod-illumisfhityroc-an-alien-in-bgee-and-iwdee#first)  
 
 ## Description:
 ------------
