@@ -9,9 +9,6 @@
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=34909)  
 
-[Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/89445/mod-crossclass-powerkits/p1?new=1)
-
-
 ## Description:
 ------------
 
