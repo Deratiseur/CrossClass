@@ -131,9 +131,3 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Skald Shaman
 
-
-
-- Swashbuckler Cleric
-
-- Archer Inquisitor
-
