@@ -560,5 +560,17 @@ SHAMANIC SONG: This song reproduces the effect of the shamanic dance but does no
 
 Disadvantages:
 – May only use the following weapons: dagger, club, spear, axe, quarterstaff, dart, sling, and shortbow.
-
 – Alignment restricted to neutral good, true neutral, and neutral evil.~
+
+@299 = ~Totemic Skald~
+@290 = ~totemic Skald~
+@291 = ~Totemic Skald~
+@292 = ~TOTEMIC SKALD: this class is a combination of two classes.
+
+Advantages:
+– May use the Summon Spirit Animal ability once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.
+
+SUMMON SPIRIT ANIMAL: The Totemic Druid summons a special spirit animal (spirit bear, spirit wolf, spirit lion, or spirit snake) to aid <PRO_HIMHER> for 6 turns. The spirit animal has 1 HD at level 1, 3 HD at level 3, 5 HD at level 5, 7 HD at level 7, and 10 HD at level 10.
+
+Disadvantages:
+– Cannot dance.~

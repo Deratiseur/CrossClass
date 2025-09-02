@@ -18,3 +18,7 @@ V5 : Unlimited Edition : me limiter à une seule occurrence de classe/kit limitai
 - Voleur métamorphe : son inconvénient "ne peut pas porter d'armure" ne peut plus être outrepassé par l'UAI.
 - Correction : le Moine maître-shi pouvait perdre son bonus de CA s'il recevait un Ctrl+R.
 - Correction : le Moine assassin avait en plus les compétences du moine de la Conscience solaire.
+
+v5.1 :
+- Ajout d'un ~ dans le fichier .tra an anglais qui empêchait l'installation du mod en anglais.
+- Ajout du kit Chaman totémique.

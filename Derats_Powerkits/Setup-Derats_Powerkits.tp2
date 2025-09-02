@@ -635,3 +635,25 @@ SAY @270
 SAY @271
 SAY @272
 LAF fl#add_kit_ee	STR_VAR kit_name = pxSHAMSKALD	END
+
+BEGIN @299	DESIGNATED 289	LABEL Px_Powerkits_Chaman_Totem
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
+COPY_EXISTING ~spcl234.spl~	~override/pxpshatm.spl~	WRITE_BYTE 0xa2 10
+ADD_KIT ~pxSHAMTOTEM~
+~pxSHAMTOTEM          1           0           1           1           0           0           0           1~
+~pxSHAMTOTEM          0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxSHAMTOTEM          0       0       12      0       12      0~
+~pxSHAMTOTEM          0       0       0       0       0       0~
+~pxSHAMTOTEM          0       0       0       0       0       0~
+~pxSHAMTOTEM          0       0       0       0       0       0~
+~pxSHAMTOTEM          0       0       0       1       1       1       0       0       0~
+~pxSHAMTOTEM          0       0       0       0       0       0~
+~Derats_Powerkits/2da/pxpchatm.2da~
+~K_SH_H K_SH_HO~
+~0x20000000    21~
+~Sh0~
+~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H39,40 STAF08~
+SAY @290
+SAY @291
+SAY @292
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSHAMTOTEM	END
