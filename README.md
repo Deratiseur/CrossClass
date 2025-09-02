@@ -71,6 +71,8 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Chaman skalde
 
+- Chaman totémique
+
 -------------------------
 
  vanilla kits combinations for cheated results:
@@ -131,3 +133,4 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Skald Shaman
 
+- Totemic Shaman
