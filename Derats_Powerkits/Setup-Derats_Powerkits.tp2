@@ -1,6 +1,6 @@
 BACKUP ~Derats_Powerkits/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v5~
+VERSION ~v5.1~
 
 ALWAYS
 	INCLUDE ~Derats_powerkits/2da/fl#add_kit_ee.tpa~
