@@ -57,7 +57,7 @@ Des combinaisons de kits vanilla pour des résultats détonants :
 
 - Maître lames Lathandrien
 
-- Invocateu Talotien
+- Invocateur Talotien
 
 - Ensorceleur entropiste 
 
