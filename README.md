@@ -8,7 +8,7 @@
 **Autor** : **Deratiseur**
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=34909)  
-[Link to the beamdog forum and completes descriptions](https://forums.beamdog.com/discussion/85149/mod-my-tiny-quest-mod-for-obg2-bgt-bg2ee-and-eet-now-in-english-and-russian#latest)  
+[Link to the beamdog forum and completes descriptions](https://forums.beamdog.com/discussion/89445/mod-crossclass-powerkits/p1)  
 
 ## Description:
 ------------
