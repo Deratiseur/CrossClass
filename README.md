@@ -14,46 +14,6 @@
 <tr>
 <td width="50%" valign="top">
 
-## Français
-
-### Description
-
-Des combinaisons de kits vanilla pour des résultats détonants :
-
-- Kensai disciple du dragon
-- Défenseur barbare
-- Archer Inquisiteur
-- Traqueur chasseur de primes
-- Traqueur assassin
-- Cavalier chasseur de morts-vivants
-- Clerc bretteur
-- Métamorphe berserker
-- Moine assassin
-- Moine tueur de magicien
-- Moine Maître-Shi (Maître lames)
-- Moine inquisiteur
-- Moine de la Lune Noire traqueur
-- Voleur métamorphe
-- Voleur Tyréen
-- Voleur Tempuséen
-- Voleur Maître-lames
-- Voleur kensaï
-- Barde chaman
-- Skalde totémique
-- Maître lames Lathandrien
-- Invocateur Talotien
-- Ensorceleur entropiste
-- Ensorceleur moine
-- Chaman belluaire
-- Chaman justicier
-- Chaman archer
-- Chaman skalde
-- Chaman totémique
-
-</td>
-
-<td width="50%" valign="top">
-
 ## English
 
 ### Description
@@ -89,6 +49,46 @@ Vanilla kits combinations for cheated results:
 - Archer Shaman
 - Skald Shaman
 - Totemic Shaman
+
+</td>
+
+<td width="50%" valign="top">
+
+## Français
+
+### Description
+
+Des combinaisons de kits vanilla pour des résultats détonants :
+
+- Kensai disciple du dragon
+- Défenseur barbare
+- Archer Inquisiteur
+- Traqueur chasseur de primes
+- Traqueur assassin
+- Cavalier chasseur de morts-vivants
+- Clerc bretteur
+- Métamorphe berserker
+- Moine assassin
+- Moine tueur de magicien
+- Moine Maître-Shi (Maître lames)
+- Moine inquisiteur
+- Moine de la Lune Noire traqueur
+- Voleur métamorphe
+- Voleur Tyréen
+- Voleur Tempuséen
+- Voleur Maître-lames
+- Voleur kensaï
+- Barde chaman
+- Skalde totémique
+- Maître lames Lathandrien
+- Invocateur Talotien
+- Ensorceleur entropiste
+- Ensorceleur moine
+- Chaman belluaire
+- Chaman justicier
+- Chaman archer
+- Chaman skalde
+- Chaman totémique
 
 </td>
 </tr>
