@@ -33,15 +33,15 @@ Inconvénients :
 @39 = ~Moine Maitre-Shi~
 @30 = ~moine Maître-Shi~
 @31 = ~Moine Maître-Shi~
-@32 = ~MOINE MAITRE-SHI : cette classe est une combinaison de deux classes.
+@32 = ~MOINE MAÎTRE-SHI : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Peut attribuer 2 étoiles dans les styles de combat à deux armes et à une main.
 - Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
-SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée.
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée.
 
-SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10.
 
 Inconvénients :
 - La classe d'armure n'augmente que tous les 3 niveaux.~
@@ -60,7 +60,7 @@ Avantages :
 
 - Peut utiliser « Convocation d'esprit animal » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
-CONVOCATION D'ESPRIT ANIMAL : Le skalde totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l'aider pendant 6 tours. L'esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.
+CONVOCATION D'ESPRIT ANIMAL : Le scalde totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l'aider pendant 6 tours. L'esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.
 
 Inconvénients :
 - Score de Vol à la tire divisé par 4.
@@ -102,11 +102,11 @@ Inconvénients :
 @62 = ~MOINE TUEUR DE MAGICIEN : cette classe est une combinaison de deux classes.
 
 Avantages :
-- Tout lanceur de sort touché subit 25 % de probabilité cumulative de rater ses incantations.
+- Tout lanceur de sorts touché subit 25 % de probabilité cumulative de rater ses incantations.
 - Au niveau 10 : +4% de résistance à la magie par niveau (maximum 100% au niveau 25).
 
 Inconvénient :
-Ne peut porter aucun objet magique excepté armes et bottes.~
+Ne peut porter aucun objet magique excepté les armes et les bottes.~
 
 @79 = ~Chaman belluaire~
 @70 = ~chaman belluaire~
@@ -131,7 +131,7 @@ Avantages :
 - Au niveau 7, il peut changer de forme en loup, en ours noir ou en ours brun une fois par jour.
 - Au niveau 10, il peut changer de forme en Araignée-sabre, en Bébé wiverne ou en Salamandre de feu une fois par jour.
 - Au niveau 19, il acquiert un usage supplémentaire des métamorphoses.
-- Six sorts profanes jusqu'au 6ème niveau sont ajoutés à son répertoire :
+- Six sorts profanes jusqu'au 6e niveau sont ajoutés à son répertoire :
   Niveau 1 : Orbe chromatique
   Niveau 2 : Toile d'araignée
   Niveau 3 : Éclair
@@ -153,7 +153,7 @@ Avantages :
 - Bonus de +3 à la classe d'armure.
 - Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.
 - Bonus de -1 au facteur de vitesse tous les 4 niveaux.
-- Peut utiliser la capacité « Kaï » une fois par jour. Obtiens une utilisation supplémentaire tous les 4 niveaux.
+- Peut utiliser la capacité « Kaï » une fois par jour. Obtient une utilisation supplémentaire tous les 4 niveaux.
 
 KAÏ : Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.
 
@@ -181,7 +181,7 @@ Inconvénients :
 - Ne peut porter d'armure.
 - Ne peut porter de gantelets ou de bracelets.
 - Alignement restreint aux non chaotiques.
-- Ne peut que qu'atteindre la haute maîtrise (quatre emplacements) dans le maniement des armes.~
+- Ne peut atteindre que la haute maîtrise (quatre emplacements) dans le maniement des armes.~
 
 @109 = ~Defenseur barbare~
 @100 = ~défenseur barbare~
@@ -204,7 +204,7 @@ RAGE : Pendant 5 rounds, la rage confère un bonus de +4 en Constitution et en 
 
 Inconvénients :
 - Ne peut pas porter d'armure plus lourde que l'armure feuilletée.
-- Ne peut qu'être compétant avec les autres armes.~
+- Ne peut qu'être compétent avec les autres armes.~
 
 @119 = ~Clerc bretteur~
 @110 = ~clerc bretteur~
@@ -231,7 +231,7 @@ Avantages :
 - Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts, les arcs longs et les arbalètes.
 - Peut lancer « Dissipation de la magie » une fois par jour, puis une fois supplémentaire tous les 4 niveaux. Cette capacité a un facteur de vitesse de 1 et ses effets s'appliquent au double du niveau de l'inquisiteur.
 - Peut lancer « Vision véritable » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
-- Au niveau 4, eut utiliser la compétence « Tir ajusté » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- Au niveau 4, peut utiliser la compétence « Tir ajusté » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 TIR AJUSTÉ : Toute attaque à distance effectuée dans les 10 secondes possède les effets cumulatifs suivants (en plus des dégâts normaux) en fonction du niveau de l'Archer :
 Niveau 4 : La cible subit un malus de -1 au TAC0.
@@ -241,7 +241,7 @@ Niveau 16 : +2 aux jets de dégâts du tir.
 
 Inconvénients :
 - Ne peut pas lancer de sorts.
-- Ne pas se camoufler.
+- Ne peut pas se camoufler.
 - Peut porter uniquement une armure de cuir, une besantine ou une armure de peau.
 - Ne peut être que compétent (1 étoile) dans le maniement des armes de mêlée.~
 
@@ -251,7 +251,7 @@ Inconvénients :
 @132 = ~CAVALIER CHASSEUR DE MORTS-VIVANTS : cette classe est une combinaison de deux classes.
 
 Avantages :
-- Bonus de +3 aux jets de toucher et de dégâts contre les créatures démoniaques, draconiques ou mort-vivantes.
+- Bonus de +3 aux jets de toucher et de dégâts contre les créatures démoniaques, draconiques ou mortes-vivantes.
 - Peut lancer « Apaisement » une fois par jour par niveau.
 - Immunité à l'immobilisation, au drain de niveau, au poison, au charme, à la terreur et aux pertes de moral.
 - 20 % de résistance au feu et à l'acide.
@@ -272,7 +272,7 @@ SAINTE PUISSANCE : Grâce à ce sort, le lanceur acquiert la force et les talent
 
 - Peut lancer « Chaos de la bataille » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.
 
-CHAOS DE LA BATAILLE : ce sort accorde un bonus aux alliés et applique des malus aux adversaires du lanceur dans une zone de 9 mètres de rayon centrée sur lui. Chaos de la bataille dure 1 tour et affecte au hasard la Classe d'armure, les points de vie, le TAC0, les jets de sauvegarde ou la chance des cibles. L'amplitude de l'effet débute à 1 (5 en ce qui concerne les points de vie), et augmente d'1 point (5 points en ce qui concerne les points de vie) tous les 6 niveaux du lanceur.
+CHAOS DE LA BATAILLE : ce sort accorde un bonus aux alliés et applique des malus aux adversaires du lanceur dans une zone de 9 mètres de rayon centrée sur lui. Chaos de la bataille dure 1 tour et affecte au hasard la Classe d'armure, les points de vie, le TAC0, les jets de sauvegarde ou la chance des cibles. L'amplitude de l'effet débute à 1 (5 en ce qui concerne les points de vie), et augmente de 1 point (5 points en ce qui concerne les points de vie) tous les 6 niveaux du lanceur.
 
 Inconvénients :
 - N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
@@ -285,10 +285,10 @@ Inconvénients :
 
 Avantages : 
 - Peut mémoriser un sort de plus par niveau.
-- Connaît les sorts « Rupture hasardeuse de Nahal », « Bouclier du chaos » et  « Bouclier du chaos amélioré ».
+- Connaît les sorts « Rupture hasardeuse de Nahal », « Bouclier du chaos » et « Bouclier du chaos amélioré ».
 
 Inconvénients :
-- Lorsque le sorcier entropiste  lance un sort, le niveau auquel le sort est lancé peut varier entre cinq niveaux en-dessous et cinq niveaux au-dessus de son niveau.
+- Lorsque le sorcier entropiste lance un sort, le niveau auquel le sort est lancé peut varier entre cinq niveaux en dessous et cinq niveaux au-dessus de son niveau.
 - Chaque fois que le sorcier entropiste lance un sort, il a 5 % de chances d'engendrer un hiatus entropique.
 
 HIATUS ENTROPIQUE : Un hiatus entropique génère un effet complètement aléatoire à la place des effets du sort initialement lancé. Ses effets peuvent être bénéfiques ou au contraire, néfastes pour l'entropiste et ses alliés.~
@@ -302,7 +302,7 @@ Avantages :
 - Peut progresser (une étoile) dans les styles de combat à une main, à deux mains et à deux armes.
 - Bonus de +2 points en vitesse de déplacement, +1 tous les 5 niveaux. 
 - Gagne 1/2 attaque par round tous les 3 niveaux, maximum +3 attaques par round.
-- Gagne +1 dégât de mêlée et TAC0 tous les 3 niveaux, maximum +7.
+- Gagne un bonus de +1 aux dégâts de mêlée et au TAC0 tous les 3 niveaux, avec un maximum de +7.
 - Bonus de +2 aux jets de sauvegarde contre les Sorts. 
 - Parade de projectiles : +1 à la Classe d'Armure contre les projectiles par tranche de 3 niveaux. 
 - Sa Classe d'Armure initiale est de 9 au niveau 1, et augmente ensuite de 1 tous les 2 niveaux. 
@@ -313,13 +313,13 @@ Avantages :
 - Niveau 11 : Immunité au poison. 
 - Niveau 12 : Bonus de -1 au facteur de vitesse. 
 - Niveau 14 : 3 % de résistance à la magie par niveau (démarre avec 42 % au niveau 14). 
-- Niveau 20 : Immunité aux armes non-magiques. 
+- Niveau 20 : Immunité aux armes non magiques. 
 - Doit être d'alignement loyal. 
 - Dés de vie : d6.
 
 Inconvénients :
 - Ne peut pas utiliser d'armes à projectiles.
-- Ne connaît pas le Coup étourdissant et la Paume Vibratoire.
+- Ne connaît pas le Coup étourdissant et la Paume vibratoire.
 - Lance deux sorts de moins par niveau et par jour.~
 
 @179 = ~Traqueur chasseur de primes~
@@ -329,8 +329,8 @@ Inconvénients :
 
 Avantages :
 - +15 % en Furtivité et Pose de pièges.
-- Son score de Pose de piège est égal à son score de Furtivité.
-- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindres par rapport aux voleurs :
+- Son score de Pose de pièges est égal à son score de Furtivité.
+- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindre par rapport aux voleurs :
   Niveau 1-8 : x2
   Niveau 9-16 : x3
   Niveau 17+ : x4
@@ -356,13 +356,13 @@ Avantages :
 - Bonus de -2 à la classe d'armure.
 - Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.
 - Bonus de -1 au facteur de vitesse tous les 4 niveaux.
-- Peut utiliser la capacité « Kaï » une fois par jour. Obtiens une utilisation supplémentaire tous les 4 niveaux.
+- Peut utiliser la capacité « Kaï » une fois par jour. Obtient une utilisation supplémentaire tous les 4 niveaux.
 
 KAÏ : Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.
 
 Inconvénients :
 - Ne peut utiliser d'armes à distance.
-- Ne peut porter ni armure ni gantelets ou bracelets, même avec la HLA "Utilisation d'objets".
+- Ne peut porter ni armure, ni gantelets, ni bracelets, même avec la HLA "Utilisation d'objets".
 - N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.
 - Alignement restreint aux non chaotiques.~
 
@@ -384,7 +384,7 @@ Avantages :
 - Peut utiliser « Arme empoisonnée » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
 
 ARME EMPOISONNÉE :
-Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectuée qu'une fois par round et les dégâts de poison varient selon le niveau du personnage :
+Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectée qu'une fois par round et les dégâts de poison varient selon le niveau du personnage :
 
 1er : la cible subit 1 dégât de poison par seconde pendant 6 secondes (jet de sauvegarde contre la mort +1 pour annuler)
 5e : la cible subit 1 dégât de poison par seconde pendant 12 secondes (jet de sauvegarde contre la mort pour annuler) et subit immédiatement 2 dégâts de poison (pas de jet de sauvegarde)
@@ -416,27 +416,27 @@ Inconvénients :
 
 Avantages :
 - Peut attribuer 3 étoiles dans le style de combat à deux armes.
-- Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour. Obtiens une utilisation supplémentaire pour chaque tous les 4 niveaux.
+- Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour. Obtient une utilisation supplémentaire de chaque capacité tous les 4 niveaux.
 
-SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
 
-SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10.
 
 Inconvénients :
 - N'a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.~
 
 @229 = ~Maitre lame lathandrien~
-@220 = ~maître lame lathandrien~
-@221 = ~Maître lame lathandrien~
-@222 = ~MAÎTRE LAME LATHANDRIEN : cette classe est une combinaison de deux classes.
+@220 = ~maître-lames lathandrien~
+@221 = ~Maître-lames lathandrien~
+@222 = ~MAÎTRE-LAMES LATHANDRIEN : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Peut attribuer 3 étoiles dans le style de combat à deux armes.
 - Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
 
-SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
+SPIRALE OFFENSIVE : Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu'une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».
 
-SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10
+SPIRALE DÉFENSIVE : Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d'armure par niveau avec un maximum de -10.
 
 - Peut utiliser « Immobilisation des morts-vivants » une fois par jour au niveau 1, puis une fois supplémentaire tous les 5 niveaux.
 - Peut utiliser « Bénédiction de Lathandre » une fois par jour au niveau 1, puis une fois supplémentaire tous les 10 niveaux.
@@ -460,7 +460,7 @@ Avantages :
 
 POING DE GLACE : lorsque cette capacité est activée, les poings du Moine de la Lune Noire se nimbent d'une carapace de glace. Pendant 1 tour, les attaques à mains nues du moine infligent 2 points de dégâts de froid supplémentaires.
 
-- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindres par rapport aux voleurs :
+- Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindre par rapport aux voleurs :
   Niveau 1-8 : x2
   Niveau 9-16 : x3
   Niveau 17+ : x4
@@ -493,10 +493,10 @@ Avantages :
 BOUCLIER DES TEMPÊTES : Ce sort dure 1 round par niveau du lanceur de sorts. Il le protège contre l'électricité, le feu, le froid et les projectiles non magiques.
 
 Inconvénients :
-- Ne peut apprendre ni lancer les sorts des écoles de l'Enchantement.
+- Ne peut apprendre ni lancer les sorts de l'école de l'Enchantement.
 - Souffre d'un malus de -15 % pour apprendre des parchemins des autres écoles.
 - -4 en constitution.
-- Ne peut utiliser que bâton et fronde.
+- Ne peut utiliser que le bâton et la fronde.
 - Doit être d'alignement neutre mauvais, chaotique mauvais ou chaotique neutre.~
 
 @259 = ~Chaman archer~
@@ -521,14 +521,14 @@ Inconvénients :
 @269 = ~Metamorphe berserker~
 @260 = ~métamorphe berserker~
 @261 = ~Métamorphe berserker~
-@262 = ~METAMORPHE BERSERKER : cette classe est une combinaison de deux classes.
+@262 = ~MÉTAMORPHE BERSERKER : cette classe est une combinaison de deux classes.
 
 Avantages :
 - Peut se métamorphoser en loup-garou une fois par jour, puis une fois supplémentaire tous les 2 niveaux.
 - Niveau 13 : Peut se métamorphoser en loup-garou majeur une fois par jour.
 - Peut utiliser « Furie » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
 
-FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé à charme, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
+FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé au charme, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
 
 Inconvénients :
 - Essoufflement après la Furie : -2 aux jets de toucher et de dégâts et +2 à la Classe d'Armure.
@@ -543,7 +543,7 @@ Inconvénients :
 
 Avantages :
 - Bonus de +1 aux jets de toucher et de dégâts.
-- Sa dance a des effets différents de celle du chaman et varie en fonction de son niveau :
+- Sa danse a des effets différents de celle du chaman et varie en fonction de son niveau :
  Niveau 1-14 : Les alliés gagnent un bonus de +2 aux jets de toucher et de dégâts et +2 à la CA.
  Niveau 15-19 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur.
  Niveau 20 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d'armure, et une immunité contre la peur, l'étourdissement et la confusion.
@@ -560,7 +560,7 @@ Avantages :
 - Le Barde chaman a un accès immédiat à un nombre de sorts spécifiques à sa classe, qu'il peut lancer comme n'importe quel autre sort : Protection de l'esprit, Brouillard putride, Lucidité spirituelle, Feu spirituel, Rappel de l'esprit, Verrou spirituel et Portail éthéré.
 - Il peut utiliser le chant chamanique à volonté.
 
-CHANT CHAMANIQUE : Ce chant reproduit l'effet de la dance chamanique mais n'interdit pas au barde de bouger et ne lui impose pas de malus de Classe d'armure.
+CHANT CHAMANIQUE : Ce chant reproduit l'effet de la danse chamanique mais n'interdit pas au barde de bouger et ne lui impose pas de malus de Classe d'armure.
 
 Inconvénients :
 - Il ne peut utiliser que les armes suivantes : dague, gourdin, lance, hache, bâton, fléchette, fronde et arc court.
@@ -574,7 +574,7 @@ Inconvénients :
 Avantages :
 - Peut utiliser « Convocation d'esprit animal » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
-CONVOCATION D'ESPRIT ANIMAL : Le shaman totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l'aider pendant 6 tours. L'esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.
+CONVOCATION D'ESPRIT ANIMAL : Le chaman totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l'aider pendant 6 tours. L'esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.
 
 Inconvénients :
 - Ne peut pas danser.~

@@ -1,6 +1,8 @@
 BACKUP ~Derats_Powerkits/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v5.1~
+VERSION ~v5.2~
+
+README ~Derats_powerkits/Readme_%LANGUAGE%.html~
 
 ALWAYS
 	INCLUDE ~Derats_powerkits/2da/fl#add_kit_ee.tpa~
@@ -636,7 +638,7 @@ SAY @271
 SAY @272
 LAF fl#add_kit_ee	STR_VAR kit_name = pxSHAMSKALD	END
 
-BEGIN @299	DESIGNATED 299	LABEL Px_Powerkits_Chaman_Totem
+BEGIN @299	DESIGNATED 289	LABEL Px_Powerkits_Chaman_Totem
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @0009
 COPY_EXISTING ~spcl234.spl~	~override/pxpshatm.spl~	WRITE_BYTE 0xa2 10
 ADD_KIT ~pxSHAMTOTEM~
@@ -656,5 +658,4 @@ ADD_KIT ~pxSHAMTOTEM~
 SAY @290
 SAY @291
 SAY @292
-
 LAF fl#add_kit_ee	STR_VAR kit_name = pxSHAMTOTEM	END

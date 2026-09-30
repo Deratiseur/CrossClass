@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrossClass Powerkits — Readme</title><style>
+:root{
+  --gold: goldenrod;
+  --gold2:#c79a35;
+  --line:#96846e;
+  --brown:#655949;
+  --brown2:#41382f;
+  --paper:#4b463f;
+  --paper2:#37332e;
+  --text:#deded9;
+  --muted:#c4bfb7;
+  --black:#080706;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  padding:0 0 50px;
+  cursor:default;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(120,95,55,.14), transparent 34%),
+    radial-gradient(ellipse at 80% 60%, rgba(95,70,40,.11), transparent 38%),
+    linear-gradient(#080706,#15120e 45%,#080706);
+  font-family:Verdana,Tahoma,Arial,sans-serif;
+  font-size:16px;
+}
+#cartouche{
+  width:calc(100% - 4cm);
+  max-width:none;
+  margin:20px 2cm 0;
+}
+#header{
+  text-align:center;
+  padding:8px 20px 18px;
+  min-height:245px;
+  border:1px solid var(--gold);
+  border-top:5px solid var(--gold);
+  border-bottom:5px solid var(--gold);
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  background:
+    linear-gradient(rgba(255,255,255,.06),rgba(0,0,0,.16)),
+    radial-gradient(ellipse at center, #514a40 0,#2c2925 55%,#080706 100%);
+}
+h1{
+  line-height:170%;
+  font-size:225%;
+  color:var(--gold);
+  margin:0;
+  text-shadow:.1rem .1rem .25rem #000;
+}
+.subtitle{
+  margin:2px auto 18px;
+  color:#eee9dd;
+  font-size:105%;
+  font-weight:bold;
+}
+.header-rule{
+  width:90%;
+  height:1px;
+  margin:18px auto;
+  background:var(--gold);
+}
+.header-grid{
+  position:relative;
+  width:100%;
+  height:3.4em;
+  margin:0 auto;
+  font-size:105%;
+}
+.header-col{
+  position:absolute;
+  top:0;
+  width:max-content;
+  text-align:left;
+  line-height:170%;
+  transform:translateX(-50%);
+}
+.header-col-left{left:25%}
+.header-col-right{left:75%}
+.header-grid strong{color:#f1eee8}
+#menu{
+  font-weight:bold;
+  margin-top:20px;
+  padding:10px 18px;
+  text-align:center;
+  color:var(--gold);
+  line-height:220%;
+  border-top:1px solid #51483b;
+  border-bottom:1px solid #17130f;
+  border-radius:4px;
+  box-shadow:5px 5px 12px #000;
+  background:linear-gradient(#5f5447,#342d25 45%,#1a1713);
+}
+a:link,a:visited{color:var(--gold);text-decoration:none}
+a:hover,a:focus{text-decoration:underline;color:#eee}
+#maindiv{margin:0 auto;width:100%}
+.content{
+  background:
+    radial-gradient(circle at 15% 0, rgba(255,255,255,.035), transparent 26%),
+    linear-gradient(135deg, rgba(255,255,255,.025), transparent 35%),
+    linear-gradient(var(--paper),var(--paper2));
+  padding:0 0 28px;
+  margin:50px auto;
+  border-width:1px 1px 4px 10px;
+  border-style:solid;
+  border-color:var(--brown);
+  position:relative;
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  overflow:hidden;
+}
+h2{
+  line-height:170%;
+  display:block;
+  text-align:left;
+  text-indent:30px;
+  padding:3px 0;
+  margin:0;
+  border-top:2px dotted var(--line);
+  border-bottom:2px dotted var(--line);
+  font-size:160%;
+  background:linear-gradient(#50473d,#2d2822);
+}
+h2::first-letter{color:var(--gold)}
+h3,h4{
+  line-height:170%;
+  margin:14px auto 8px;
+  width:90%;
+  padding:0;
+}
+h3{font-size:140%;color:#eee}
+h4{font-size:120%;color:var(--gold)}
+p{
+  text-align:justify;
+  font-size:110%;
+  line-height:150%;
+  margin:10px auto;
+  width:90%;
+}
+ul{
+  line-height:170%;
+  margin-left:4%;
+  width:87%;
+}
+hr{
+  margin:20px auto;
+  width:90%;
+  height:1px;
+  border:0;
+  background:var(--gold);
+}
+.important{
+  font-size:110%;
+  text-align:left;
+  border-width:1px 4px;
+  border-style:solid;
+  border-color:var(--gold);
+  padding:10px 16px;
+  margin:18px auto;
+  width:84%;
+  line-height:160%;
+  background:rgba(0,0,0,.13);
+}
+.note{
+  color:#f0eadf;
+  border-left:4px solid var(--gold);
+  width:88%;
+  margin:18px auto;
+  padding:10px 14px;
+  background:rgba(0,0,0,.16);
+  line-height:160%;
+}
+
+/* Grandes zones repliables */
+details.zone{
+  width:90%;
+  margin:14px auto;
+  border:1px solid #796b58;
+  border-left:5px solid var(--gold);
+  border-radius:3px;
+  background:rgba(0,0,0,.18);
+  box-shadow:0 2px 7px rgba(0,0,0,.35);
+}
+details.zone > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:11px 15px;
+  font-weight:bold;
+  font-size:125%;
+  color:#eee;
+  background:linear-gradient(#4d4439,#29251f);
+  user-select:none;
+}
+details.zone > summary::-webkit-details-marker{display:none}
+details.zone > summary::before{
+  content:"▶";
+  color:var(--gold);
+  margin-right:10px;
+}
+details.zone[open] > summary::before{content:"▼"}
+.zonebody{padding:10px 16px 18px}
+.zonebody h4{
+  width:100%;
+  margin:14px 0 5px;
+  padding-bottom:3px;
+  border-bottom:1px solid #6c6153;
+}
+.zonebody ul{width:96%;margin-left:1.5%}
+
+/* Spoiler imbriqué : option plus difficile */
+details.hard{
+  width:96%;
+  margin:20px auto 4px;
+  border:1px solid var(--gold2);
+  background:#29251f;
+}
+details.hard > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:9px 12px;
+  font-weight:bold;
+  color:var(--gold);
+  background:linear-gradient(#443a2e,#211d18);
+}
+details.hard > summary::-webkit-details-marker{display:none}
+details.hard > summary::before{
+  content:"▶";
+  margin-right:8px;
+}
+details.hard[open] > summary::before{content:"▼"}
+.hardbody{padding:10px 14px}
+
+/* Versions */
+details.versionbox{
+  width:90%;
+  margin:11px auto;
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+details.versionbox > summary{
+  cursor:pointer;
+  padding:7px 5px;
+  font-weight:bold;
+  color:#eee;
+}
+.versionbody{padding:4px 12px 10px}
+.versionbody ul{width:95%}
+
+.backtop{
+  text-align:right;
+  font-weight:bold;
+  margin:20px 5% 0;
+}
+.small{font-size:95%;color:var(--muted)}
+@media(max-width:760px){
+  #cartouche{width:96%;margin:12px auto 0}
+  .header-grid{height:auto}
+  .header-col{
+    position:static;
+    width:auto;
+    transform:none;
+    margin:5px 8%;
+  }
+  #header{min-height:0}
+  details.zone,p,.important,.note{width:94%}
+}
+
+.zonebody p{width:100%;text-align:left;font-size:110%;margin:10px 0;line-height:160%}
+.zonebody ul{width:auto;margin:8px 0 12px;padding-left:24px;font-size:110%;line-height:160%}
+.zonebody h4{font-size:115%}
+.zonebody .progression{padding-left:20px;font-size:105%;margin:5px 0;line-height:160%}
+.zonebody .note{width:100%;font-size:105%}
+.header-grid{height:auto;display:flex;justify-content:space-around;gap:24px;flex-wrap:wrap}
+.header-col{position:static;transform:none;width:auto}
+#header{min-height:0;padding:18px 20px 24px}
+@media(max-width:760px){h1{font-size:185%;line-height:140%}.header-col{margin:0}.zonebody{padding:10px 12px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><div id="cartouche">
+<a id="top"></a><header id="header"><h1>CrossClass Powerkits</h1>
+<div class="subtitle">Class and kit combinations for Enhanced Edition Infinity Engine games</div>
+<div class="header-rule"></div><div class="header-grid"><div class="header-col"><div><strong>Author:</strong> Deratiseur</div><div><strong>Type:</strong> class kits</div></div><div class="header-col"><div><strong>Languages:</strong> French, English</div><div><strong>Version:</strong> 5.2</div></div></div></header>
+<nav id="menu" aria-label="Contents"><a href="#intro">Overview</a> • <a href="#kits">Kit Descriptions</a> • <a href="#versions">Version History</a></nav>
+<main id="maindiv"><section class="content" id="intro"><h2>Overview</h2><br><p>This mod grew out of a simple idea: “Which class could make the best use of the Wizard Slayer kit?” I looked into it and found a fantastic combination with another class. With that idea in mind, I went through the kits available in the base game, looking for the class that would make the most of each one. This mod brings together the most convincing combinations I found.</p><div class="important"><strong>Warning: some combinations are seriously overpowered!</strong></div>
+<div class="backtop"><a href="#top">Back to top</a></div></section>
+<section class="content" id="kits"><h2>Kit Descriptions</h2><br><p class="small">Click a kit’s name to show or hide its description.</p>
+<details class="zone" id="kit-90"><summary>Dragon Disciple Kensai</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+3 bonus to Armor Class.</li>
+<li>+1 to hit and damage rolls every 3 levels.</li>
+<li>-1 bonus to Speed Factor every 4 levels.</li>
+<li>May use the Kai ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>KAI:</strong> All successful attacks within the next 10 seconds deal maximum damage.</p>
+<ul>
+<li>3rd level: May use Breath Weapon once per day.</li>
+</ul>
+<p><strong>BREATH WEAPON:</strong> The Dragon Disciple Kensai breathes a gout of flame up to 30 ft. long, inflicting 3d8 points of fire damage on all creatures caught within the 140-degree cone.</p>
+<ul>
+<li>4th level: Gains 25% innate Fire Resistance.</li>
+<li>5th level: +1 bonus to AC and Constitution.</li>
+<li>6th level: Breath Weapon damage increases to 4d8.</li>
+<li>8th level: Innate Fire Resistance rises to 50%.</li>
+<li>9th level: Breath Weapon damage increases to 5d8.</li>
+<li>10th level: +1 bonus to AC.</li>
+<li>12th level: Breath Weapon damage increases to 6d8.</li>
+<li>12th level: Innate Fire Resistance rises to 75%.</li>
+<li>15th level: Breath Weapon damage increases to 7d8.</li>
+<li>15th level: +1 bonus to AC and Constitution.</li>
+<li>16th level: Innate Fire Resistance rises to 100%.</li>
+<li>18th level: Breath Weapon damage increases to 8d8.</li>
+<li>20th level: +1 bonus to AC.</li>
+<li>Hit Die: d12</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not wear any armor.</li>
+<li>May not use missile weapons.</li>
+<li>May not wear gauntlets or bracers.</li>
+<li>Alignment restricted to any non-chaotic.</li>
+<li>Can only achieve high mastery (four slots) in weapon proficiency.</li>
+</ul></div></details>
+<details class="zone" id="kit-100"><summary>Barbarian Defender</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>Can achieve mastery (three slots) with axes and war hammers.</li>
+<li>Can specialize (two slots) in any fighting style, and allocate three slots in the two-weapon fighting style.</li>
+<li>Moves 2 points faster than other characters.</li>
+<li>Immune to backstab.</li>
+<li>May use the Defensive Stance and Rage abilities once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>DEFENSIVE STANCE:</strong> For 1 turn, the Barbarian Defender gains +50% resistance to all forms of physical damage, a +2 bonus to Saving Throws, and a 50% movement rate penalty.</p>
+<p><strong>RAGE:</strong> The enraged status lasts for 5 rounds and provides a +4 bonus to Strength and Constitution, a -2 penalty to Armor Class and a +2 bonus to Saving Throws vs. Spell, as well as immunity to all charm, hold, fear, maze, stun, sleep, confusion, and level drain spells.</p>
+<ul>
+<li>Gains 10% resistance to crushing, slashing, piercing, and missile damage every 5 levels to a maximum of 40% at level 20.</li>
+<li>Hit Die: d12</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not wear armor heavier than splint mail.</li>
+<li>Can only be Proficient (one slot) with other weapons.</li>
+</ul></div></details>
+<details class="zone" id="kit-120"><summary>Inquisitor Archer</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>Immune to hold and charm.</li>
+<li>+1 to hit and damage rolls with any missile weapon every 3 levels.</li>
+<li>May achieve Grand Mastery (5 slots) in longbows, shortbows, and crossbows.</li>
+<li>May use Dispel Magic once per day. Gains one use at level 1 and an additional use every 4 levels thereafter. The spell is cast at Speed Factor 1 and acts at twice the Inquisitor&#x27;s character level.</li>
+<li>May use True Sight once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+<li>May use the Called Shot ability once per day. Gains one use at level 4 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>CALLED SHOT:</strong> All successful ranged attacks within the next 10 seconds have the following cumulative effects besides normal damage, according to the level of the Archer:</p>
+<p>4th level: -1 penalty to target&#x27;s THAC0.</p>
+<p>8th level: -1 penalty to target&#x27;s Saving Throws vs. Spell.</p>
+<p>12th level: -1 penalty to the target&#x27;s Strength score.</p>
+<p>16th level: +2 bonus to damage roll.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not hide in shadows.</li>
+<li>May not cast spells.</li>
+<li>May only wear leather armor, studded leather armor, or hide armor.</li>
+<li>May only become Proficient (one slot) with melee weapons.</li>
+</ul></div></details>
+<details class="zone" id="kit-170"><summary>Bounty hunter Stalker</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+15% to Stealth and Set Traps.</li>
+<li>his or her Set Traps score is equal to his or her Stealth score.</li>
+<li>May use the Backstab ability, but with a lower damage multiplier than that of Thieves:</li>
+</ul>
+<p class="progression">Level 1-8: x2</p>
+<p class="progression">Level 9-16: x3</p>
+<p class="progression">Level 17+: x4</p>
+<ul>
+<li>Can set traps like a thief.</li>
+<li>May use the Set Special Snare ability once per day in addition to the normal Thief&#x27;s Set Snare. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+</ul>
+<p><strong>SET SPECIAL SNARE:</strong> Set a trap in the chosen location when no hostile creatures are in sight. Traps grow more powerful with the Bounty Hunter&#x27;s level and can only be triggered by enemies.</p>
+<p>1st level: Deals 3d8+5 missile damage and slows target for 5 rounds if a Save vs. Spell with a -4 penalty is failed.</p>
+<p>11th level: Deals 4d8+5 missile damage and holds target for 5 rounds if a Save vs. Spell with a -1 penalty is failed.</p>
+<p>16th level: Erects an Otiluke&#x27;s Resilient Sphere around the target for 7 rounds if a Save vs. Spell is failed.</p>
+<p>21st level: Mazes the target.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not wear armor heavier than studded leather.</li>
+</ul></div></details>
+<details class="zone" id="kit-190"><summary>Assassin Stalker</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 bonus to hit and damage rolls.</li>
+<li>+20% to Move Silently and Hide In Shadows.</li>
+<li>May use the Backstab ability:</li>
+</ul>
+<p class="progression">Level 1-6 : x2</p>
+<p class="progression">Level 7-12 : x3</p>
+<p class="progression">Level 13-18 : x4</p>
+<p class="progression">Level 19-24 : x5</p>
+<p class="progression">Level 25-30 : x6</p>
+<p class="progression">Level 31+ : x7</p>
+<ul>
+<li>May use the Poison Weapon ability. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>POISON WEAPON:</strong> Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character&#x27;s level:</p>
+<p class="progression">1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)</p>
+<p class="progression">5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)</p>
+<p class="progression">9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)</p>
+<p class="progression">13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not cast spells.</li>
+</ul></div></details>
+<details class="zone" id="kit-130"><summary>Undead hunter Cavalier</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+3 bonus to hit and damage rolls against all fiendish, draconic and undead creatures.</li>
+<li>May cast Remove Fear once per day per level.</li>
+<li>Immune to hold, level drain, charm, fear, poison, and morale failure.</li>
+<li>20% resistance to fire and acid.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not use missile weapons.</li>
+<li>May not use the Lay On Hands ability.</li>
+</ul></div></details>
+<details class="zone" id="kit-110"><summary>Swashbuckler Cleric</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 bonus to Armor Class at 1st level, plus an additional +1 bonus every 5 levels.</li>
+<li>+1 bonus to hit and damage rolls every 5 levels.</li>
+<li>May specialize (two slots) in any melee weapon available to Clerics.</li>
+<li>May place 3 slots into Two-Weapon Style.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not turn undead.</li>
+</ul></div></details>
+<details class="zone" id="kit-260"><summary>Berserker Shapeshifter</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May shapeshift into the form of a werewolf once per day. Gains one use at level 1 and an additional use every 2 levels thereafter.</li>
+<li>13th level: May shapeshift into a greater werewolf once per day.</li>
+<li>May use the Rage ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>RAGE:</strong> The enraged state lasts for 1 turn. While enraged, a Berserker gains a bonus of +2 to his or her attack and damage rolls as well as to his or her Armor Class, and becomes immune to charm, confusion, fear, feeblemind, hold, imprisonment, level drain, maze, stun, and sleep. The Berserker also gains 15 temporary Hit Points which are taken away at the end of his or her berserk spree, possibly knocking him or her unconscious.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Becomes winded after berserking: -2 penalty to Armor Class, to-hit rolls, and damage rolls.</li>
+<li>May not use missile weapons.</li>
+<li>May not wear any armor.</li>
+<li>No other shapeshifting abilities due to the effort required in maintaining balance in his or her primary forms.</li>
+</ul></div></details>
+<details class="zone" id="kit-50"><summary>Assassin Monk</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 bonus to hit and damage rolls.</li>
+<li>May use Backstab with a damage multiplier that reaches x7.</li>
+</ul>
+<p class="progression">Level 1-5: x2</p>
+<p class="progression">Level 6-11: x3</p>
+<p class="progression">Level 12-17: x4</p>
+<p class="progression">Level 18-23: x5</p>
+<p class="progression">Level 24-29: x6</p>
+<p class="progression">Level 30+: x7</p>
+<ul>
+<li>May use the Poison Weapon ability. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>POISON WEAPON:</strong></p>
+<p>Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character&#x27;s level:</p>
+<p class="progression">1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)</p>
+<p class="progression">5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)</p>
+<p class="progression">9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)</p>
+<p class="progression">13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Alignment restricted to any non-good.</li>
+<li>May not use the Lay On Hands ability.</li>
+<li>May not use the Stunning Blow ability.</li>
+</ul></div></details>
+<details class="zone" id="kit-60"><summary>Wizard slayer Monk</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>Each successful hit bestows a 25% cumulative chance of spell failure on the target.</li>
+<li>At level 10: +4% magic resistance per level (maximum 100% at level 25).</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not use any magic items apart from weapons and boots.</li>
+</ul></div></details>
+<details class="zone" id="kit-30"><summary>Master-Shi Monk</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May place 2 slots in Two-Weapon Style and Single-Weapon Style.</li>
+<li>May use the Offensive Spin and Defensive Spin abilities once per day. Gains one use each at level 1 and an additional use each every 4 levels thereafter.</li>
+</ul>
+<p><strong>OFFENSIVE SPIN:</strong> During the next 4 rounds, the character&#x27;s movement rate doubles and he or she gains a +2 bonus to hit and damage rolls as well as an extra attack per round. All attacks deal maximum damage for the duration.</p>
+<p><strong>DEFENSIVE SPIN:</strong> During the next 4 rounds, the character is rooted to the spot and gains a +1 bonus to Armor Class per level, up to a maximum of +10.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Armor Class increases only every 3 levels.</li>
+</ul></div></details>
+<details class="zone" id="kit-200"><summary>Inquisitor Monk</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May cast Dispel Magic once per day. Gains one use at level 1 and an additional use every 4 levels thereafter. The spell is cast at Speed Factor 1 and acts at twice the Inquisitor&#x27;s character level.</li>
+<li>May cast True Sight once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+<li>Immune to hold and charm.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not use the Lay On Hands ability.</li>
+<li>May not use the Stunning Blow ability.</li>
+<li>May not use the Quivering Palm ability.</li>
+</ul></div></details>
+<details class="zone" id="kit-230"><summary>Stalker Dark Moon Monk</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+20% to Move Silently and Hide In Shadows.</li>
+<li>May use the Frozen Fist ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>FROZEN FIST:</strong> When this ability is activated, the Dark Moon Monk&#x27;s fists are wreathed in a frosty shell. For 1 turn, the Dark Moon Monk&#x27;s unarmed attacks deal an additional 2 points of cold damage on each successful hit.</p>
+<ul>
+<li>May use the Backstab ability, but with a lower damage multiplier than that of Thieves:</li>
+</ul>
+<p class="progression">Level 1-8: x2</p>
+<p class="progression">Level 9-16: x3</p>
+<p class="progression">Level 17+: x4</p>
+<ul>
+<li>1st level: May cast Blindness once per day.</li>
+<li>3rd level: May cast Blur once per day.</li>
+<li>7th level: May cast Vampiric Touch once per day.</li>
+<li>11th level: May cast Mirror Image once per day.</li>
+<li>14th level: May cast Haste, Protection From Normal Missiles, and Minor Spell Deflection once per day.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Alignment restricted to lawful evil.</li>
+<li>May not invest points into the Detect Illusions skill.</li>
+<li>May not use the Lay On Hands ability.</li>
+<li>May not use the Stunning Blow ability.</li>
+<li>May not wear gauntlets or bracers.</li>
+</ul></div></details>
+<details class="zone" id="kit-10"><summary>Shapeshifter Thief</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May shapeshift into the form of a werewolf once per day. Gains one use at level 1 and an additional use every 2 levels thereafter.</li>
+<li>13th level: May shapeshift into a greater werewolf once per day. Gains an additional use every 2 levels thereafter.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Alignment restricted to true neutral.</li>
+<li>May not wear any armor, even with the HLA “Use Any Item”.</li>
+</ul><div class="note"><strong>Compatibility:</strong> incompatible with the “Improved Shapeshifting” component of The Tweaks Anthology.</div></div></details>
+<details class="zone" id="kit-20"><summary>Tyrran Thief</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May cast Exaltation once per day every 5 levels of the caster (starts at 1st level with one use).</li>
+</ul>
+<p><strong>EXALTATION:</strong> This spell enables a thief to aid and protect any one being other than themselves. By touch, the caster removes the effects of fear, sleep, feeblemind, unconsciousness, and intoxication, as well as berserk and confused states of mind. In addition, the recipient is protected against spells and other attacks that cause these effects for 1 turn.</p>
+<ul>
+<li>May cast Divine Favor once per day every 10 levels of the caster (starts at 1st level with one use).</li>
+</ul>
+<p><strong>DIVINE FAVOR:</strong> This spell grants the caster a +1 bonus to hit and damage rolls every 3 levels of the caster (maximum +6). The spell lasts for 2 rounds.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Can only specialize in weapons available to priests, bastard swords, and longswords.</li>
+<li>Alignment restricted to neutral good or lawful neutral.</li>
+</ul></div></details>
+<details class="zone" id="kit-140"><summary>Tempuran Thief</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May cast Holy Power once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+</ul>
+<p><strong>HOLY POWER:</strong> Through this spell, the caster imbues himself or herself with the strength and skill of a Fighter of the same level. Thus, his or her Strength is set to 18/00—even if it is normally higher—his or her THAC0 becomes that of a Fighter of the same level, and he or she gains 1 temporary Hit Point per level. This will last for 1 round per level.</p>
+<ul>
+<li>May cast Chaos of Battle once per day. Gains one use at level 1 and an additional use every 10 levels thereafter.</li>
+</ul>
+<p><strong>CHAOS OF BATTLE:</strong> Chaos of Battle applies bonuses to all allies and penalties to all enemies within a 30-ft. radius of the caster. The spell lasts 1 turn and will randomly affect the targets&#x27; Armor Class, Hit Points, THAC0, saves, or luck. The magnitude of the effect starts at 1 (5 for Hit Points) at level 1 and will improve by 1 (5 for Hit Points) every 6 levels of the caster.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May only distribute 20 skill points per level among thieving skills.</li>
+<li>Alignment restricted to chaotic good, chaotic neutral, chaotic evil, or true neutral.</li>
+</ul></div></details>
+<details class="zone" id="kit-210"><summary>Blade Thief</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May place 3 slots in Two-Weapon Style.</li>
+<li>May use the Offensive Spin and Defensive Spin abilities once per day. Gains one use each at level 1 and an additional use each every 4 levels thereafter.</li>
+</ul>
+<p><strong>OFFENSIVE SPIN:</strong> During the next 4 rounds, the character&#x27;s movement rate doubles and he or she gains a +2 bonus to hit and damage rolls as well as an extra attack per round. All attacks deal maximum damage for the duration. Offensive Spin may not be used in conjunction with the Haste or Improved Haste spells.</p>
+<p><strong>DEFENSIVE SPIN:</strong> During the next 4 rounds, the character is rooted to the spot and gains a +1 bonus to Armor Class per level, up to a maximum of +10.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May only distribute 20 skill points per level among thieving skills.</li>
+</ul></div></details>
+<details class="zone" id="kit-180"><summary>Kensai Thief</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May specialize in any weapon available to Thieves and reach the maximum proficiency in all fighting styles.</li>
+<li>+2 bonus to Armor Class.</li>
+<li>+1 to hit and damage rolls every 3 levels.</li>
+<li>-1 bonus to Speed Factor every 4 levels.</li>
+<li>May use the Kai ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>KAI:</strong> All successful attacks within the next 10 seconds deal maximum damage.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not use missile weapons.</li>
+<li>May not wear any armor or gauntlets or bracers, even with the HLA “Use Any Item”.</li>
+<li>May only distribute 20 skill points per level among thieving skills.</li>
+<li>Alignment restricted to any non-chaotic.</li>
+</ul></div></details>
+<details class="zone" id="kit-280"><summary>Shaman Bard</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>Gains access to a number of Shaman-specific spells, which can be cast like any other: Spirit Ward, Writhing Fog, Spiritual Clarity, Spirit Fire, Recall Spirit, Spiritual Lock, and Ether Gate.</li>
+<li>May use Shamanic Song at will.</li>
+</ul>
+<p><strong>SHAMANIC SONG:</strong> This song reproduces the effect of the shamanic dance but does not prevent the bard from moving and does not impose an Armor Class penalty.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May only use the following weapons: dagger, club, spear, axe, quarterstaff, dart, sling, and shortbow.</li>
+<li>Alignment restricted to neutral good, true neutral, and neutral evil.</li>
+</ul></div></details>
+<details class="zone" id="kit-40"><summary>Totemic Skald</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 bonus to hit and damage rolls.</li>
+<li>The Skald&#x27;s song is different from the typical Bard&#x27;s and varies with level:</li>
+</ul>
+<p>1st level: Grants allies a +2 bonus to hit and damage rolls, and a +2 bonus to AC.</p>
+<p>15th level: Grants allies a +4 bonus to hit and damage rolls, a +4 bonus to AC, and immunity to fear.</p>
+<p>20th level: Grants allies a +4 bonus to hit and damage rolls, a +4 bonus to AC, and immunity to fear, stun, and confusion.</p>
+<ul>
+<li>May use the Summon Spirit Animal ability once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+</ul>
+<p><strong>SUMMON SPIRIT ANIMAL:</strong> The Totemic Skald summons a special spirit animal (spirit bear, spirit wolf, spirit lion, or spirit snake) to aid him or her for 6 turns. The spirit animal has 1 HD at level 1, 3 HD at level 3, 5 HD at level 5, 7 HD at level 7, and 10 HD at level 10.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Only has one quarter the normal Pick Pockets score.</li>
+<li>Alignment restricted to true neutral.</li>
+<li>Can only be proficient with weapons usable by druids.</li>
+</ul></div></details>
+<details class="zone" id="kit-220"><summary>Lathanderian Blade</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May place 3 slots in Two-Weapon Style.</li>
+<li>May use the Offensive Spin and Defensive Spin abilities once per day. Gains one use each at level 1 and an additional use each every 4 levels thereafter.</li>
+</ul>
+<p><strong>OFFENSIVE SPIN:</strong> During the next 4 rounds, the character&#x27;s movement rate doubles and he or she gains a +2 bonus to hit and damage rolls as well as an extra attack per round. All attacks deal maximum damage for the duration. Offensive Spin may not be used in conjunction with the Haste or Improved Haste spells.</p>
+<p><strong>DEFENSIVE SPIN:</strong> During the next 4 rounds, the character is rooted to the spot and gains a +1 bonus to Armor Class per level, up to a maximum of +10.</p>
+<ul>
+<li>May cast Hold Undead once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+<li>May cast Boon of Lathander once per day. Gains one use at level 1 and an additional use every 10 levels thereafter.</li>
+</ul>
+<p><strong>BOON OF LATHANDER:</strong> This spell lasts 1 round per level of the caster. It gives the caster a +1 bonus to attack and damage rolls, a +1 bonus to all Saving Throws, and 1 extra attack per round. It also protects the recipient from level drain.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Can only be proficient with weapons that can be used by clerics.</li>
+<li>Only has one half the normal Lore value.</li>
+<li>Only has one half the normal Pick Pockets skill.</li>
+<li>Alignment restricted to lawful good, neutral good, chaotic good, and true neutral.</li>
+</ul></div></details>
+<details class="zone" id="kit-240"><summary>Talassan Invoker</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>Receives a +15% bonus when scribing scrolls from the Invocation school.</li>
+<li>Receives a +2 bonus when making Saving Throws against spells from the Invocation school.</li>
+<li>Targets suffer a -2 penalty when making Saving Throws against spells from the Invocation school.</li>
+<li>May cast Lightning Bolt once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+<li>May cast Storm Shield once per day. Gains one use at level 1 and an additional use every 10 levels thereafter.</li>
+</ul>
+<p><strong>STORM SHIELD:</strong> This spell lasts 1 round per level of the caster. It protects the caster from lightning, fire, cold, and normal missiles.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not learn or cast any spells of the Enchantment school.</li>
+<li>Receives a -15% penalty when scribing scrolls from other schools.</li>
+<li>Incurs a -4 penalty to Constitution.</li>
+<li>Can only use quarterstaffs and slings.</li>
+<li>Alignment restricted to neutral evil, chaotic evil, and chaotic neutral.</li>
+</ul></div></details>
+<details class="zone" id="kit-150"><summary>Wild Sorcerer</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May memorize one additional spell per level.</li>
+<li>Knows the spells “Nahal&#x27;s Reckless Dweomer”, “Chaos Shield” and “Improved Chaos Shield”.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Casting level varies slightly whenever he or she casts a spell—anywhere between five levels lower and five levels higher than the Wild Sorcerer&#x27;s true level.</li>
+<li>Upon casting a spell, there is a 5% chance of incurring a wild surge.</li>
+</ul>
+<p><strong>WILD SURGE:</strong> A wild surge generates a completely random magical effect from the spell being cast. Its effects may be either beneficial or detrimental to the Wild Sorcerer and his or her allies.</p></div></details>
+<details class="zone" id="kit-160"><summary>Monk Sorcerer</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May place one slot in Single-Weapon Style, Two-Handed Weapon Style, and Two-Weapon Style.</li>
+<li>Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.</li>
+<li>Gains 1/2 attack per round every 3 levels, maximum +3 attacks per round.</li>
+<li>Gains a +1 bonus to melee damage and THAC0 every 3 levels, up to a maximum of +7.</li>
+<li>Receives a +2 bonus to Saving Throws vs. Spell.</li>
+<li>Deflect Missiles: +1 bonus to AC vs. missile attacks every 3 levels.</li>
+<li>Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 2 levels.</li>
+<li>5th level: Becomes immune to all diseases and cannot be slowed or hasted.</li>
+<li>7th level: May use the Lay On Hands ability to heal 2 Hit Points per level.</li>
+<li>8th level: Gains a -1 bonus to Speed Factor.</li>
+<li>9th level: Gains a +1 bonus to all Saving Throws and becomes immune to charm.</li>
+<li>11th level: Becomes immune to poison.</li>
+<li>12th level: Gains another -1 bonus to Speed Factor.</li>
+<li>14th level: Gains 3% Magic Resistance per level (starting with 42% at 14th level).</li>
+<li>20th level: Becomes immune to non-magical weapons.</li>
+<li>Alignment restricted to lawful.</li>
+<li>Hit Die: d6</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not use missile weapons.</li>
+<li>May not use the Stunning Blow or Quivering Palm abilities.</li>
+<li>May cast two fewer spells per level per day.</li>
+</ul></div></details>
+<details class="zone" id="kit-70"><summary>Beast master Shaman</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May use the Find Familiar ability.</li>
+<li>8th level: May cast Animal Summoning I as a level 1 spell.</li>
+<li>10th level: May cast Animal Summoning II as a level 2 spell.</li>
+<li>12th level: May cast Animal Summoning III as a level 3 spell.</li>
+</ul>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Can only use clubs, quarterstaffs and shortbows.</li>
+</ul></div></details>
+<details class="zone" id="kit-80"><summary>Avenger Shaman</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>7th level: May Shapeshift into a wolf, black bear, or brown bear once per day.</li>
+<li>10th level: May Shapeshift into a sword spider, baby wyvern, or fire salamander once a day.</li>
+<li>19th level: Gains an additional use of Shapeshift.</li>
+<li>Six arcane spells are added to his or her repertoire, all the way up to the 6th level. These are listed below:</li>
+</ul>
+<p>1st level: Chromatic Orb.</p>
+<p>2nd level: Web.</p>
+<p>3rd level: Lightning Bolt.</p>
+<p>4th level: Improved Invisibility.</p>
+<p>5th level: Chaos.</p>
+<p>6th level: Chain Lightning.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>May not wear heavier armor than leather.</li>
+<li>Incurs a -2 penalty to Strength and Constitution.</li>
+<li>Alignment restricted to true neutral.</li>
+</ul></div></details>
+<details class="zone" id="kit-250"><summary>Archer Shaman</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 to hit and damage rolls with any missile weapon every 3 levels.</li>
+<li>May achieve Grand Mastery (5 slots) in shortbows.</li>
+<li>May use the Called Shot ability once per day. Gains one use at level 4 and an additional use every 4 levels thereafter.</li>
+</ul>
+<p><strong>CALLED SHOT:</strong> All successful ranged attacks within the next 10 seconds have the following cumulative effects besides normal damage, according to the level of the Archer:</p>
+<p>4th level: -1 penalty to target&#x27;s THAC0.</p>
+<p>8th level: -1 penalty to target&#x27;s Saving Throws vs. Spell.</p>
+<p>12th level: -1 penalty to the target&#x27;s Strength score.</p>
+<p>16th level: +2 bonus to damage roll.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Hit Die: D6</li>
+</ul></div></details>
+<details class="zone" id="kit-270"><summary>Skald Shaman</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>+1 bonus to hit and damage rolls.</li>
+<li>his or her dance is different from the typical Shaman&#x27;s and varies with level:</li>
+</ul>
+<p>1st level: Grants allies a +2 bonus to hit and damage rolls, and a +2 bonus to AC.</p>
+<p>15th level: Grants allies a +4 bonus to hit and damage rolls, a +4 bonus to AC, and immunity to fear.</p>
+<p>20th level: Grants allies a +4 bonus to hit and damage rolls, a +4 bonus to AC, and immunity to fear, stun, and confusion.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>his or her dance does not summon spirits.</li>
+</ul></div></details>
+<details class="zone" id="kit-290"><summary>Totemic Shaman</summary><div class="zonebody"><h4>Advantages:</h4>
+<ul>
+<li>May use the Summon Spirit Animal ability once per day. Gains one use at level 1 and an additional use every 5 levels thereafter.</li>
+</ul>
+<p><strong>SUMMON SPIRIT ANIMAL:</strong> The Totemic Shaman summons a special spirit animal (spirit bear, spirit wolf, spirit lion, or spirit snake) to aid him or her for 6 turns. The spirit animal has 1 HD at level 1, 3 HD at level 3, 5 HD at level 5, 7 HD at level 7, and 10 HD at level 10.</p>
+<h4>Disadvantages:</h4>
+<ul>
+<li>Cannot dance.</li>
+</ul></div></details><div class="backtop"><a href="#top">Back to top</a></div></section><section class="content" id="versions"><h2>Version History</h2><br><details class="versionbox"><summary>Version 2</summary><div class="versionbody"><ul><li>Added three kits.</li><li>Fighters can now dual-class (Thieves can, so why not Fighters?).</li><li>Tyrran Thief: corrected the description; the ability lasts 2 rounds, not 2 turns.</li><li>Tyrran Thief: changed the disadvantage.</li><li>Corrected the English description of the Barbarian Defender.</li></ul></div></details><details class="versionbox"><summary>Version 3</summary><div class="versionbody"><ul><li>Added the Monk Sorcerer kit.</li><li>Reversed the combination: the Archer Inquisitor becomes the Inquisitor Archer (a Paladin without a Holy Avenger?).</li><li>Reorganized the component installation order to match the class order.</li></ul></div></details><details class="versionbox"><summary>Version 4</summary><div class="versionbody"><ul><li>Added the Bounty Hunter Stalker kit.</li></ul></div></details><details class="versionbox"><summary>Version 5</summary><div class="versionbody"><p>Unlimited Edition: restricting myself to a single occurrence of each class or kit limited the possibilities. The “UNLIMITED” version removes that restriction.</p><ul><li>Added 11 kits.</li><li>Shapeshifter Thief: the restriction against wearing armor can no longer be bypassed by Use Any Item.</li><li>Fixed an issue where the Master-Shi Monk could lose the Armor Class bonus when Ctrl+R was used on the character.</li><li>Fixed an issue where the Assassin Monk also received the Sun Soul Monk’s abilities.</li></ul></div></details><details class="versionbox"><summary>Version 5.1</summary><div class="versionbody"><ul><li>Added a missing ~ delimiter to the English .tra file; its absence prevented installation in English.</li><li>Added the Totemic Shaman kit.</li></ul></div></details><details class="versionbox"><summary>Version 5.2</summary><div class="versionbody"><ul><li>Corrected the French and English texts.</li><li>Combined the readme and changelog into a single HTML file.</li></ul></div></details><div class="backtop"><a href="#top">Back to top</a></div></section></main></div></body></html>

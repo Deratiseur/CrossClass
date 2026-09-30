@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrossClass Powerkits — Lisez-moi</title><style>
+:root{
+  --gold: goldenrod;
+  --gold2:#c79a35;
+  --line:#96846e;
+  --brown:#655949;
+  --brown2:#41382f;
+  --paper:#4b463f;
+  --paper2:#37332e;
+  --text:#deded9;
+  --muted:#c4bfb7;
+  --black:#080706;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  padding:0 0 50px;
+  cursor:default;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(120,95,55,.14), transparent 34%),
+    radial-gradient(ellipse at 80% 60%, rgba(95,70,40,.11), transparent 38%),
+    linear-gradient(#080706,#15120e 45%,#080706);
+  font-family:Verdana,Tahoma,Arial,sans-serif;
+  font-size:16px;
+}
+#cartouche{
+  width:calc(100% - 4cm);
+  max-width:none;
+  margin:20px 2cm 0;
+}
+#header{
+  text-align:center;
+  padding:8px 20px 18px;
+  min-height:245px;
+  border:1px solid var(--gold);
+  border-top:5px solid var(--gold);
+  border-bottom:5px solid var(--gold);
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  background:
+    linear-gradient(rgba(255,255,255,.06),rgba(0,0,0,.16)),
+    radial-gradient(ellipse at center, #514a40 0,#2c2925 55%,#080706 100%);
+}
+h1{
+  line-height:170%;
+  font-size:225%;
+  color:var(--gold);
+  margin:0;
+  text-shadow:.1rem .1rem .25rem #000;
+}
+.subtitle{
+  margin:2px auto 18px;
+  color:#eee9dd;
+  font-size:105%;
+  font-weight:bold;
+}
+.header-rule{
+  width:90%;
+  height:1px;
+  margin:18px auto;
+  background:var(--gold);
+}
+.header-grid{
+  position:relative;
+  width:100%;
+  height:3.4em;
+  margin:0 auto;
+  font-size:105%;
+}
+.header-col{
+  position:absolute;
+  top:0;
+  width:max-content;
+  text-align:left;
+  line-height:170%;
+  transform:translateX(-50%);
+}
+.header-col-left{left:25%}
+.header-col-right{left:75%}
+.header-grid strong{color:#f1eee8}
+#menu{
+  font-weight:bold;
+  margin-top:20px;
+  padding:10px 18px;
+  text-align:center;
+  color:var(--gold);
+  line-height:220%;
+  border-top:1px solid #51483b;
+  border-bottom:1px solid #17130f;
+  border-radius:4px;
+  box-shadow:5px 5px 12px #000;
+  background:linear-gradient(#5f5447,#342d25 45%,#1a1713);
+}
+a:link,a:visited{color:var(--gold);text-decoration:none}
+a:hover,a:focus{text-decoration:underline;color:#eee}
+#maindiv{margin:0 auto;width:100%}
+.content{
+  background:
+    radial-gradient(circle at 15% 0, rgba(255,255,255,.035), transparent 26%),
+    linear-gradient(135deg, rgba(255,255,255,.025), transparent 35%),
+    linear-gradient(var(--paper),var(--paper2));
+  padding:0 0 28px;
+  margin:50px auto;
+  border-width:1px 1px 4px 10px;
+  border-style:solid;
+  border-color:var(--brown);
+  position:relative;
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  overflow:hidden;
+}
+h2{
+  line-height:170%;
+  display:block;
+  text-align:left;
+  text-indent:30px;
+  padding:3px 0;
+  margin:0;
+  border-top:2px dotted var(--line);
+  border-bottom:2px dotted var(--line);
+  font-size:160%;
+  background:linear-gradient(#50473d,#2d2822);
+}
+h2::first-letter{color:var(--gold)}
+h3,h4{
+  line-height:170%;
+  margin:14px auto 8px;
+  width:90%;
+  padding:0;
+}
+h3{font-size:140%;color:#eee}
+h4{font-size:120%;color:var(--gold)}
+p{
+  text-align:justify;
+  font-size:110%;
+  line-height:150%;
+  margin:10px auto;
+  width:90%;
+}
+ul{
+  line-height:170%;
+  margin-left:4%;
+  width:87%;
+}
+hr{
+  margin:20px auto;
+  width:90%;
+  height:1px;
+  border:0;
+  background:var(--gold);
+}
+.important{
+  font-size:110%;
+  text-align:left;
+  border-width:1px 4px;
+  border-style:solid;
+  border-color:var(--gold);
+  padding:10px 16px;
+  margin:18px auto;
+  width:84%;
+  line-height:160%;
+  background:rgba(0,0,0,.13);
+}
+.note{
+  color:#f0eadf;
+  border-left:4px solid var(--gold);
+  width:88%;
+  margin:18px auto;
+  padding:10px 14px;
+  background:rgba(0,0,0,.16);
+  line-height:160%;
+}
+
+/* Grandes zones repliables */
+details.zone{
+  width:90%;
+  margin:14px auto;
+  border:1px solid #796b58;
+  border-left:5px solid var(--gold);
+  border-radius:3px;
+  background:rgba(0,0,0,.18);
+  box-shadow:0 2px 7px rgba(0,0,0,.35);
+}
+details.zone > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:11px 15px;
+  font-weight:bold;
+  font-size:125%;
+  color:#eee;
+  background:linear-gradient(#4d4439,#29251f);
+  user-select:none;
+}
+details.zone > summary::-webkit-details-marker{display:none}
+details.zone > summary::before{
+  content:"▶";
+  color:var(--gold);
+  margin-right:10px;
+}
+details.zone[open] > summary::before{content:"▼"}
+.zonebody{padding:10px 16px 18px}
+.zonebody h4{
+  width:100%;
+  margin:14px 0 5px;
+  padding-bottom:3px;
+  border-bottom:1px solid #6c6153;
+}
+.zonebody ul{width:96%;margin-left:1.5%}
+
+/* Spoiler imbriqué : option plus difficile */
+details.hard{
+  width:96%;
+  margin:20px auto 4px;
+  border:1px solid var(--gold2);
+  background:#29251f;
+}
+details.hard > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:9px 12px;
+  font-weight:bold;
+  color:var(--gold);
+  background:linear-gradient(#443a2e,#211d18);
+}
+details.hard > summary::-webkit-details-marker{display:none}
+details.hard > summary::before{
+  content:"▶";
+  margin-right:8px;
+}
+details.hard[open] > summary::before{content:"▼"}
+.hardbody{padding:10px 14px}
+
+/* Versions */
+details.versionbox{
+  width:90%;
+  margin:11px auto;
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+details.versionbox > summary{
+  cursor:pointer;
+  padding:7px 5px;
+  font-weight:bold;
+  color:#eee;
+}
+.versionbody{padding:4px 12px 10px}
+.versionbody ul{width:95%}
+
+.backtop{
+  text-align:right;
+  font-weight:bold;
+  margin:20px 5% 0;
+}
+.small{font-size:95%;color:var(--muted)}
+@media(max-width:760px){
+  #cartouche{width:96%;margin:12px auto 0}
+  .header-grid{height:auto}
+  .header-col{
+    position:static;
+    width:auto;
+    transform:none;
+    margin:5px 8%;
+  }
+  #header{min-height:0}
+  details.zone,p,.important,.note{width:94%}
+}
+
+.zonebody p{width:100%;text-align:left;font-size:110%;margin:10px 0;line-height:160%}
+.zonebody ul{width:auto;margin:8px 0 12px;padding-left:24px;font-size:110%;line-height:160%}
+.zonebody h4{font-size:115%}
+.zonebody .progression{padding-left:20px;font-size:105%;margin:5px 0;line-height:160%}
+.zonebody .note{width:100%;font-size:105%}
+.header-grid{height:auto;display:flex;justify-content:space-around;gap:24px;flex-wrap:wrap}
+.header-col{position:static;transform:none;width:auto}
+#header{min-height:0;padding:18px 20px 24px}
+@media(max-width:760px){h1{font-size:185%;line-height:140%}.header-col{margin:0}.zonebody{padding:10px 12px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><div id="cartouche">
+<a id="top"></a><header id="header"><h1>CrossClass Powerkits</h1>
+<div class="subtitle">Des combinaisons de classes et de kits pour les jeux Infinity Engine Enhanced Edition</div>
+<div class="header-rule"></div><div class="header-grid"><div class="header-col"><div><strong>Auteur :</strong> Deratiseur</div><div><strong>Type :</strong> kits de classe</div></div><div class="header-col"><div><strong>Langues :</strong> français, anglais</div><div><strong>Version :</strong> 5.2</div></div></div></header>
+<nav id="menu" aria-label="Sommaire"><a href="#intro">Présentation</a> • <a href="#kits">Description des kits</a> • <a href="#versions">Historique des mises à jour</a></nav>
+<main id="maindiv"><section class="content" id="intro"><h2>Présentation</h2><br><p>Ce mod est né d’une idée toute simple : « Quelle classe pourrait tirer le meilleur parti du kit de Tueur de magicien ? » J’ai cherché et j’ai trouvé une fantastique combinaison avec une autre classe. Puis l’idée était là, et j’ai cherché, pour chaque kit disponible dans le jeu de base, quelle classe pourrait s’y combiner pour obtenir le meilleur résultat. Ce mod compile ce que j’ai trouvé de plus convaincant.</p><div class="important"><strong>Attention, certaines combinaisons sont vraiment cheatées !</strong></div>
+<div class="backtop"><a href="#top">Retour en haut</a></div></section>
+<section class="content" id="kits"><h2>Description des kits</h2><br><p class="small">Cliquez sur le nom d’un kit pour afficher ou masquer sa description.</p>
+<details class="zone" id="kit-90"><summary>Kensai disciple du dragon</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +3 à la classe d&#x27;armure.</li>
+<li>Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.</li>
+<li>Bonus de -1 au facteur de vitesse tous les 4 niveaux.</li>
+<li>Peut utiliser la capacité « Kaï » une fois par jour. Obtient une utilisation supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>KAÏ :</strong> Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.</p>
+<ul>
+<li>Niveau 3 : peut utiliser Souffle une fois par jour.</li>
+</ul>
+<p><strong>SOUFFLE :</strong> le Kensaï disciple du Dragon crache une flamme d&#x27;une portée de 9 m qui inflige 3d8 points de dégâts de feu à toutes les créatures se trouvant dans le cône de 140 degrés.</p>
+<ul>
+<li>Niveau 4 : gagne 25 % de résistance au feu.</li>
+<li>Niveau 5 : bonus de +1 à la CA et à la Constitution.</li>
+<li>Niveau 6 : les dégâts de Souffle augmentent jusqu&#x27;à 4d8.</li>
+<li>Niveau 8 : 50 % de résistance au feu.</li>
+<li>Niveau 9 : les dégâts de Souffle augmentent jusqu&#x27;à 5d8.</li>
+<li>Niveau 10 : bonus de +1 à la CA.</li>
+<li>Niveau 12 : les dégâts de Souffle augmentent jusqu&#x27;à 6d8.</li>
+<li>Niveau 12 : 75 % de résistance au feu.</li>
+<li>Niveau 15 : les dégâts de Souffle augmentent jusqu&#x27;à 7d8.</li>
+<li>Niveau 15 : bonus de +1 à la CA et à la Constitution.</li>
+<li>Niveau 16 : 100 % de résistance au feu.</li>
+<li>Niveau 18 : les dégâts de Souffle augmentent jusqu&#x27;à 8d8.</li>
+<li>Niveau 20 : bonus de +1 à la CA.</li>
+<li>Dés de vie : D12.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut utiliser d&#x27;armes à distance.</li>
+<li>Ne peut porter d&#x27;armure.</li>
+<li>Ne peut porter de gantelets ou de bracelets.</li>
+<li>Alignement restreint aux non chaotiques.</li>
+<li>Ne peut atteindre que la haute maîtrise (quatre emplacements) dans le maniement des armes.</li>
+</ul></div></details>
+<details class="zone" id="kit-100"><summary>Défenseur barbare</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut atteindre la maîtrise (trois emplacements) avec les haches et les marteaux de guerre.</li>
+<li>Peut se spécialiser (deux étoiles) dans n&#x27;importe quel style de combat, et allouer trois étoiles dans le style de combat à deux armes.</li>
+<li>Bonus de +2 points en vitesse de déplacement.</li>
+<li>Immunité aux attaques sournoises.</li>
+<li>Peut utiliser « Position défensive » et « Rage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>POSITION DÉFENSIVE :</strong> le Protecteur barbare gagne 50 % de résistance à toute forme de dégâts physiques, un bonus de +2 aux jets de sauvegarde, et un malus de 50 % à la vitesse de déplacement pendant 1 tour.</p>
+<p><strong>RAGE :</strong> Pendant 5 rounds, la rage confère un bonus de +4 en Constitution et en Force, une pénalité de -2 à la Classe d&#x27;Armure et un bonus de +2 aux jets de sauvegarde contre les sorts. La rage immunise aussi contre les sorts de charme, d&#x27;immobilisation, d&#x27;effroi, de labyrinthe, d&#x27;étourdissement, de sommeil, de confusion et d&#x27;absorption de niveau.</p>
+<ul>
+<li>Gagne 10 % de résistance aux dégâts contondants, tranchants, perforants et de projectiles tous les 5 niveaux, jusqu&#x27;à 40 % au niveau 20.</li>
+<li>Dés de vie : d12</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas porter d&#x27;armure plus lourde que l&#x27;armure feuilletée.</li>
+<li>Ne peut qu&#x27;être compétent avec les autres armes.</li>
+</ul></div></details>
+<details class="zone" id="kit-120"><summary>Archer inquisiteur</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Immunité aux sorts d&#x27;immobilisation et de charme.</li>
+<li>Bonus de +1 aux jets de toucher et de dégâts avec les armes à projectiles tous les 3 niveaux.</li>
+<li>Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts, les arcs longs et les arbalètes.</li>
+<li>Peut lancer « Dissipation de la magie » une fois par jour, puis une fois supplémentaire tous les 4 niveaux. Cette capacité a un facteur de vitesse de 1 et ses effets s&#x27;appliquent au double du niveau de l&#x27;inquisiteur.</li>
+<li>Peut lancer « Vision véritable » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.</li>
+<li>Au niveau 4, peut utiliser la compétence « Tir ajusté » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>TIR AJUSTÉ :</strong> Toute attaque à distance effectuée dans les 10 secondes possède les effets cumulatifs suivants (en plus des dégâts normaux) en fonction du niveau de l&#x27;Archer :</p>
+<p class="progression">Niveau 4 : La cible subit un malus de -1 au TAC0.</p>
+<p class="progression">Niveau 8 : La cible subit un malus de -1 aux jets de sauvegarde contre les sorts.</p>
+<p class="progression">Niveau 12 : La cible subit un malus de -1 à la Force.</p>
+<p class="progression">Niveau 16 : +2 aux jets de dégâts du tir.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas lancer de sorts.</li>
+<li>Ne peut pas se camoufler.</li>
+<li>Peut porter uniquement une armure de cuir, une besantine ou une armure de peau.</li>
+<li>Ne peut être que compétent (1 étoile) dans le maniement des armes de mêlée.</li>
+</ul></div></details>
+<details class="zone" id="kit-170"><summary>Traqueur chasseur de primes</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>+15 % en Furtivité et Pose de pièges.</li>
+<li>Son score de Pose de pièges est égal à son score de Furtivité.</li>
+<li>Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindre par rapport aux voleurs :</li>
+</ul>
+<p class="progression">Niveau 1-8 : x2</p>
+<p class="progression">Niveau 9-16 : x3</p>
+<p class="progression">Niveau 17+ : x4</p>
+<ul>
+<li>Peut poser des pièges comme un voleur.</li>
+<li>Peut poser des pièges spéciaux en plus de ceux utilisés par les voleurs. Peut utiliser cette compétence une fois par jour au niveau 1 et une fois supplémentaire tous les 5 niveaux.</li>
+</ul>
+<p><strong>POSE DE PIÈGES SPÉCIAUX :</strong> Permet de poser un piège à l&#x27;endroit choisi lorsqu&#x27;aucune créature hostile n&#x27;est en vue. La puissance des pièges s&#x27;améliore à mesure que le traqueur chasseur de primes augmente de niveau et ils ne peuvent être déclenchés que par les ennemis.</p>
+<p class="progression">Niveau 1 : Le piège inflige 3d8 +5 dégâts (projectile) et ralentit la victime pendant 5 rounds si elle échoue à un jet de sauvegarde contre les sorts à -4.</p>
+<p class="progression">Niveau 11 : Le piège inflige 4d8 +5 dégâts (projectile) et immobilise la victime pendant 5 rounds si elle échoue à un jet de sauvegarde contre les sorts à -1.</p>
+<p class="progression">Niveau 16 : Le piège déclenche le sort « Sphère résistante d&#x27;Otiluke » ciblé sur la victime pendant 7 rounds si elle échoue à un jet de sauvegarde contre les sorts.</p>
+<p class="progression">Niveau 21 : Le piège déclenche le sort « Labyrinthe » sur la victime.</p>
+<h4>Désavantages :</h4>
+<ul>
+<li>Ne peut pas porter d&#x27;armure plus épaisse que celle de cuir clouté.</li>
+</ul></div></details>
+<details class="zone" id="kit-190"><summary>Traqueur assassin</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +1 aux jets de toucher et de dégâts.</li>
+<li>+20 % en Furtivité et Se cacher dans l&#x27;ombre.</li>
+<li>Peut utiliser « Attaque sournoise » :</li>
+</ul>
+<p class="progression">Niveau 1-6 : x2</p>
+<p class="progression">Niveau 7-12 : x3</p>
+<p class="progression">Niveau 13-18 : x4</p>
+<p class="progression">Niveau 19-24 : x5</p>
+<p class="progression">Niveau 25-30 : x6</p>
+<p class="progression">Niveau 31+ : x7</p>
+<ul>
+<li>Peut utiliser « Arme empoisonnée » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>ARME EMPOISONNÉE :</strong> </p>
+<p>Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectée qu&#x27;une fois par round et les dégâts de poison varient selon le niveau du personnage :</p>
+<p class="progression">1er : la cible subit 1 dégât de poison par seconde pendant 6 secondes (jet de sauvegarde contre la mort +1 pour annuler)</p>
+<p class="progression">5e : la cible subit 1 dégât de poison par seconde pendant 12 secondes (jet de sauvegarde contre la mort pour annuler) et subit immédiatement 2 dégâts de poison (pas de jet de sauvegarde)</p>
+<p class="progression">9e : la cible subit 1 dégât de poison par seconde pendant 18 secondes (jet de sauvegarde contre la mort à -1 pour annuler) et subit immédiatement 4 dégâts de poison (pas de jet de sauvegarde)</p>
+<p class="progression">13e : la cible subit 1 dégât de poison par seconde pendant 24 secondes (jet de sauvegarde contre la mort à -2 pour annuler) et subit immédiatement 6 dégâts de poison (pas de jet de sauvegarde)</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas lancer de sorts.</li>
+</ul></div></details>
+<details class="zone" id="kit-130"><summary>Cavalier chasseur de morts-vivants</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +3 aux jets de toucher et de dégâts contre les créatures démoniaques, draconiques ou mortes-vivantes.</li>
+<li>Peut lancer « Apaisement » une fois par jour par niveau.</li>
+<li>Immunité à l&#x27;immobilisation, au drain de niveau, au poison, au charme, à la terreur et aux pertes de moral.</li>
+<li>20 % de résistance au feu et à l&#x27;acide.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas utiliser d&#x27;armes à projectiles.</li>
+<li>Ne peut pas utiliser la capacité « Imposition des mains ».</li>
+</ul></div></details>
+<details class="zone" id="kit-110"><summary>Clerc bretteur</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de -1 à la classe d&#x27;armure, et -1 supplémentaire tous les 5 niveaux.</li>
+<li>Bonus de +1 aux jets de toucher et de dégâts tous les 5 niveaux.</li>
+<li>Peut se spécialiser (2 étoiles) en toute arme de mêlée de clerc.</li>
+<li>Peut dépenser jusqu&#x27;à 3 étoiles dans le style de combat à deux armes.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas repousser les morts-vivants.</li>
+</ul></div></details>
+<details class="zone" id="kit-260"><summary>Métamorphe berserker</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut se métamorphoser en loup-garou une fois par jour, puis une fois supplémentaire tous les 2 niveaux.</li>
+<li>Niveau 13 : Peut se métamorphoser en loup-garou majeur une fois par jour.</li>
+<li>Peut utiliser « Furie » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>FURIE :</strong> Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu&#x27;à la classe d&#x27;armure, et devient immunisé au charme, à l&#x27;immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l&#x27;absorption de niveaux, à l&#x27;emprisonnement, à l&#x27;étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Essoufflement après la Furie : -2 aux jets de toucher et de dégâts et +2 à la Classe d&#x27;Armure.</li>
+<li>Ne peut pas utiliser d&#x27;armes à distance.</li>
+<li>Ne peut porter aucune armure.</li>
+<li>Ne peut se métamorphoser en d&#x27;autres formes en raison de l&#x27;effort requis pour maintenir l&#x27;équilibre de sa forme primaire.</li>
+</ul></div></details>
+<details class="zone" id="kit-50"><summary>Moine assassin</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +1 aux jets de toucher et de dégâts.</li>
+<li>Peut effectuer des attaques sournoises qui peuvent atteindre un multiplicateur de x7.</li>
+</ul>
+<p class="progression">Niveau 1-5 : x2</p>
+<p class="progression">Niveau 6-11 : x3</p>
+<p class="progression">Niveau 12-17 : x4</p>
+<p class="progression">Niveau 18-23 : x5</p>
+<p class="progression">Niveau 24-29 : x6</p>
+<p class="progression">Niveau 30+ : x7</p>
+<ul>
+<li>Peut utiliser « Attaque empoisonnée » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>ATTAQUE EMPOISONNÉE :</strong> </p>
+<p>Chaque coup réussi lors des 5 prochains rounds injecte du poison à la cible. Chaque cible ne peut être affectée qu&#x27;une fois par round et les dégâts de poison varient selon le niveau du personnage :</p>
+<p class="progression">1er : la cible subit 1 dégât de poison par seconde pendant 6 secondes (jet de sauvegarde contre la mort +1 pour annuler)</p>
+<p class="progression">5e : la cible subit 1 dégât de poison par seconde pendant 12 secondes (jet de sauvegarde contre la mort pour annuler) et subit immédiatement 2 dégâts de poison (pas de jet de sauvegarde)</p>
+<p class="progression">9e : la cible subit 1 dégât de poison par seconde pendant 18 secondes (jet de sauvegarde contre la mort à -1 pour annuler) et subit immédiatement 4 dégâts de poison (pas de jet de sauvegarde)</p>
+<p class="progression">13e : la cible subit 1 dégât de poison par seconde pendant 24 secondes (jet de sauvegarde contre la mort à -2 pour annuler) et subit immédiatement 6 dégâts de poison (pas de jet de sauvegarde)</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas être d&#x27;alignement bon.</li>
+<li>Ne peut utiliser la capacité Imposition des mains.</li>
+<li>Ne peut utiliser la capacité Coup étourdissant.</li>
+</ul></div></details>
+<details class="zone" id="kit-60"><summary>Moine tueur de magicien</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Tout lanceur de sorts touché subit 25 % de probabilité cumulative de rater ses incantations.</li>
+<li>Au niveau 10 : +4% de résistance à la magie par niveau (maximum 100% au niveau 25).</li>
+</ul>
+<h4>Inconvénient :</h4>
+<p>Ne peut porter aucun objet magique excepté les armes et les bottes.</p></div></details>
+<details class="zone" id="kit-30"><summary>Moine Maître-Shi</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut attribuer 2 étoiles dans les styles de combat à deux armes et à une main.</li>
+<li>Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>SPIRALE OFFENSIVE :</strong> Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu&#x27;une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée.</p>
+<p><strong>SPIRALE DÉFENSIVE :</strong> Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d&#x27;armure par niveau avec un maximum de -10.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>La classe d&#x27;armure n&#x27;augmente que tous les 3 niveaux.</li>
+</ul></div></details>
+<details class="zone" id="kit-200"><summary>Moine inquisiteur</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut lancer « Dissipation de la magie » une fois par jour (une utilisation au niveau 1, puis une utilisation supplémentaire tous les 4 niveaux). Cette capacité a un facteur de vitesse de 1 et ses effets s&#x27;appliquent au double du niveau de l&#x27;inquisiteur.</li>
+<li>Peut lancer « Vision véritable » une fois par jour tous les 4 niveaux (une utilisation au niveau 1).</li>
+<li>Immunité aux sorts d&#x27;immobilisation et de charme.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut utiliser la capacité Imposition des mains.</li>
+<li>Ne peut utiliser la capacité Coup étourdissant.</li>
+<li>Ne peut utiliser la capacité Paume vibratoire.</li>
+</ul></div></details>
+<details class="zone" id="kit-230"><summary>Moine de la lune noire traqueur</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>+20 % en Furtivité et Se cacher dans l&#x27;ombre.</li>
+<li>Peut lancer la capacité Poing de glace une fois par jour. Il gagne une utilisation au niveau 1, puis une autre tous les 4 niveaux.</li>
+</ul>
+<p><strong>POING DE GLACE :</strong> lorsque cette capacité est activée, les poings du Moine de la Lune Noire se nimbent d&#x27;une carapace de glace. Pendant 1 tour, les attaques à mains nues du moine infligent 2 points de dégâts de froid supplémentaires.</p>
+<ul>
+<li>Peut utiliser « Attaque sournoise », mais avec un multiplicateur de dégâts moindre par rapport aux voleurs :</li>
+</ul>
+<p class="progression">Niveau 1-8 : x2</p>
+<p class="progression">Niveau 9-16 : x3</p>
+<p class="progression">Niveau 17+ : x4</p>
+<ul>
+<li>Niveau 1 : peut lancer Cécité une fois par jour.</li>
+<li>Niveau 3 : peut lancer Flou une fois par jour.</li>
+<li>Niveau 7 : peut lancer Toucher vampirique une fois par jour.</li>
+<li>Niveau 11 : peut lancer Image miroir une fois par jour.</li>
+<li>Niveau 14 : Peut lancer Hâte, Protection contre les projectiles normaux et Déviation des sorts mineure une fois par jour.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Doit être d&#x27;alignement loyal mauvais.</li>
+<li>Ne peut investir des points dans la capacité Détection des illusions.</li>
+<li>Ne peut utiliser la capacité Imposition des mains.</li>
+<li>Ne peut utiliser la capacité Coup étourdissant.</li>
+<li>Ne peut porter de gantelets ou de bracelets.</li>
+</ul></div></details>
+<details class="zone" id="kit-10"><summary>Voleur métamorphe</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut se métamorphoser en loup-garou une fois par jour, puis une fois supplémentaire tous les 2 niveaux.</li>
+<li>Au niveau 13, peut se métamorphoser en loup-garou majeur une fois par jour, puis une fois supplémentaire tous les 2 niveaux.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Alignement limité à Neutre strict.</li>
+<li>Ne peut porter aucune armure, même avec la HLA &quot;Utilisation d&#x27;objets&quot;.</li>
+</ul><div class="note"><strong>Compatibilité :</strong> incompatible avec le composant « Métamorphose améliorée » du mod Tweak Anthology.</div></div></details>
+<details class="zone" id="kit-20"><summary>Voleur Tyréen</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut lancer « Exaltation » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.</li>
+</ul>
+<p><strong>EXALTATION :</strong> Ce sort permet au voleur d&#x27;aider et de protéger une personne autre que lui-même. Par le toucher, le lanceur supprime les effets de peur, de sommeil, de débilité mentale, de perte de conscience, et d&#x27;intoxication, ainsi que des états de berserk et de confusion de l&#x27;esprit. En outre, le bénéficiaire est protégé contre les sorts et autres attaques qui causent ces effets pendant 1 tour.</p>
+<ul>
+<li>Peut lancer « Faveur divine » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.</li>
+</ul>
+<p><strong>FAVEUR DIVINE :</strong> Ce sort confère au lanceur un bonus de +1 au toucher et aux jets de dégâts tous les 3 niveaux (maximum +6). Le sort dure 2 rounds.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut se spécialiser que dans les armes de prêtre, les épées bâtardes et les épées longues.</li>
+<li>Doit être d&#x27;alignement neutre bon ou loyal neutre.</li>
+</ul></div></details>
+<details class="zone" id="kit-140"><summary>Voleur Tempuséen</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut lancer « Sainte puissance » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.</li>
+</ul>
+<p><strong>SAINTE PUISSANCE :</strong> Grâce à ce sort, le lanceur acquiert la force et les talents d&#x27;un guerrier de même niveau. Ainsi, sa force passe à 18/00, même si elle est d&#x27;habitude plus élevée, son TAC0 devient celui d&#x27;un guerrier de même niveau et il obtient 1 point de vie temporaire supplémentaire par niveau. Ces effets se prolongent pendant un round par niveau.</p>
+<ul>
+<li>Peut lancer « Chaos de la bataille » une fois par jour, puis une fois supplémentaire tous les 10 niveaux.</li>
+</ul>
+<p><strong>CHAOS DE LA BATAILLE :</strong> ce sort accorde un bonus aux alliés et applique des malus aux adversaires du lanceur dans une zone de 9 mètres de rayon centrée sur lui. Chaos de la bataille dure 1 tour et affecte au hasard la Classe d&#x27;armure, les points de vie, le TAC0, les jets de sauvegarde ou la chance des cibles. L&#x27;amplitude de l&#x27;effet débute à 1 (5 en ce qui concerne les points de vie), et augmente de 1 point (5 points en ce qui concerne les points de vie) tous les 6 niveaux du lanceur.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>N&#x27;a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.</li>
+<li>Doit être d&#x27;alignement chaotique bon, chaotique neutre, chaotique mauvais ou neutre strict.</li>
+</ul></div></details>
+<details class="zone" id="kit-210"><summary>Voleur maître-lames</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut attribuer 3 étoiles dans le style de combat à deux armes.</li>
+<li>Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour. Obtient une utilisation supplémentaire de chaque capacité tous les 4 niveaux.</li>
+</ul>
+<p><strong>SPIRALE OFFENSIVE :</strong> Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu&#x27;une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».</p>
+<p><strong>SPIRALE DÉFENSIVE :</strong> Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d&#x27;armure par niveau avec un maximum de -10.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>N&#x27;a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.</li>
+</ul></div></details>
+<details class="zone" id="kit-180"><summary>Voleur kensaï</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut se spécialiser avec toutes les armes de voleur et maximiser tous les styles de combat.</li>
+<li>Bonus de -2 à la classe d&#x27;armure.</li>
+<li>Bonus de +1 aux jets de toucher et de dégâts tous les 3 niveaux.</li>
+<li>Bonus de -1 au facteur de vitesse tous les 4 niveaux.</li>
+<li>Peut utiliser la capacité « Kaï » une fois par jour. Obtient une utilisation supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>KAÏ :</strong> Pendant 10 secondes, toutes les attaques réussies infligent le maximum de dégâts.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut utiliser d&#x27;armes à distance.</li>
+<li>Ne peut porter ni armure, ni gantelets, ni bracelets, même avec la HLA &quot;Utilisation d&#x27;objets&quot;.</li>
+<li>N&#x27;a que 20 points de compétence à répartir dans ses compétences de roublard à chaque niveau.</li>
+<li>Alignement restreint aux non chaotiques.</li>
+</ul></div></details>
+<details class="zone" id="kit-280"><summary>Barde chaman</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Le Barde chaman a un accès immédiat à un nombre de sorts spécifiques à sa classe, qu&#x27;il peut lancer comme n&#x27;importe quel autre sort : Protection de l&#x27;esprit, Brouillard putride, Lucidité spirituelle, Feu spirituel, Rappel de l&#x27;esprit, Verrou spirituel et Portail éthéré.</li>
+<li>Il peut utiliser le chant chamanique à volonté.</li>
+</ul>
+<p><strong>CHANT CHAMANIQUE :</strong> Ce chant reproduit l&#x27;effet de la danse chamanique mais n&#x27;interdit pas au barde de bouger et ne lui impose pas de malus de Classe d&#x27;armure.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Il ne peut utiliser que les armes suivantes : dague, gourdin, lance, hache, bâton, fléchette, fronde et arc court.</li>
+<li>Il doit être d&#x27;alignement neutre bon, neutre strict ou neutre mauvais.</li>
+</ul></div></details>
+<details class="zone" id="kit-40"><summary>Scalde totémique</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +1 aux jets de toucher et de dégâts.</li>
+<li>La chanson du Scalde a des effets différents de celle du barde et varie en fonction de son niveau :</li>
+</ul>
+<p class="progression">Niveau 1-14 : Les alliés gagnent un bonus de +2 aux jets de toucher et de dégâts et +2 à la CA.</p>
+<p class="progression">Niveau 15-19 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d&#x27;armure, et une immunité contre la peur.</p>
+<p class="progression">Niveau 20 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d&#x27;armure, et une immunité contre la peur, l&#x27;étourdissement et la confusion.</p>
+<ul>
+<li>Peut utiliser « Convocation d&#x27;esprit animal » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.</li>
+</ul>
+<p><strong>CONVOCATION D&#x27;ESPRIT ANIMAL :</strong> Le scalde totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l&#x27;aider pendant 6 tours. L&#x27;esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Score de Vol à la tire divisé par 4.</li>
+<li>Alignement limité à Neutre strict.</li>
+<li>Ne peut être compétent qu&#x27;avec les armes utilisables par les druides.</li>
+</ul></div></details>
+<details class="zone" id="kit-220"><summary>Maître-lames lathandrien</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut attribuer 3 étoiles dans le style de combat à deux armes.</li>
+<li>Peut utiliser « Spirale offensive » et « Spirale défensive » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.</li>
+</ul>
+<p><strong>SPIRALE OFFENSIVE :</strong> Durant les 4 prochains rounds, la vitesse de mouvement du personnage est doublée et il obtient un bonus de +2 aux jets de toucher et de dégâts, ainsi qu&#x27;une attaque supplémentaire par round. Toutes les attaques infligent le maximum de dégâts pendant la durée. Ne peut être utilisée en conjonction avec « Hâte » ou « Hâte améliorée ».</p>
+<p><strong>SPIRALE DÉFENSIVE :</strong> Durant les 4 prochains rounds, le personnage ne peut se déplacer, et il obtient un bonus de -1 à la classe d&#x27;armure par niveau avec un maximum de -10.</p>
+<ul>
+<li>Peut utiliser « Immobilisation des morts-vivants » une fois par jour au niveau 1, puis une fois supplémentaire tous les 5 niveaux.</li>
+<li>Peut utiliser « Bénédiction de Lathandre » une fois par jour au niveau 1, puis une fois supplémentaire tous les 10 niveaux.</li>
+</ul>
+<p><strong>BÉNÉDICTION DE LATHANDRE :</strong> Ce sort dure 1 round par niveau et confère +1 aux jets d&#x27;attaque, de dégâts et de sauvegarde, ainsi qu&#x27;une attaque supplémentaire par round. Il protège également contre le drain de niveau.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut être compétent qu&#x27;avec les armes utilisables par les clercs.</li>
+<li>Score de Connaissances divisé par 2.</li>
+<li>Score de Vol à la tire divisé par 2.</li>
+<li>Doit être d&#x27;alignement loyal bon, neutre bon, chaotique bon ou neutre strict.</li>
+</ul></div></details>
+<details class="zone" id="kit-240"><summary>Invocateur talotien</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bénéficie d&#x27;un bonus de +15 % pour l&#x27;apprentissage d&#x27;un sort de l&#x27;école de l&#x27;Invocation.</li>
+<li>Bénéficie d&#x27;un bonus de +2 pour les jets de sauvegarde contre les sorts de l&#x27;école de l&#x27;Invocation.</li>
+<li>Les cibles souffrent d&#x27;un malus de -2 pour les jets de sauvegarde contre les sorts de l&#x27;école de l&#x27;Invocation.</li>
+<li>Peut utiliser « Éclair » une fois par jour à partir du niveau 1, puis une fois supplémentaire tous les 5 niveaux.</li>
+<li>Peut utiliser « Bouclier des tempêtes » une fois par jour à partir du niveau 1, puis une fois supplémentaire tous les 10 niveaux.</li>
+</ul>
+<p><strong>BOUCLIER DES TEMPÊTES :</strong> Ce sort dure 1 round par niveau du lanceur de sorts. Il le protège contre l&#x27;électricité, le feu, le froid et les projectiles non magiques.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut apprendre ni lancer les sorts de l&#x27;école de l&#x27;Enchantement.</li>
+<li>Souffre d&#x27;un malus de -15 % pour apprendre des parchemins des autres écoles.</li>
+<li>-4 en constitution.</li>
+<li>Ne peut utiliser que le bâton et la fronde.</li>
+<li>Doit être d&#x27;alignement neutre mauvais, chaotique mauvais ou chaotique neutre.</li>
+</ul></div></details>
+<details class="zone" id="kit-150"><summary>Ensorceleur entropiste</summary><div class="zonebody"><h4>Avantages :</h4>
+<p>- Peut mémoriser un sort de plus par niveau.</p>
+<p>- Connaît les sorts « Rupture hasardeuse de Nahal », « Bouclier du chaos » et « Bouclier du chaos amélioré ».</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Lorsque le sorcier entropiste lance un sort, le niveau auquel le sort est lancé peut varier entre cinq niveaux en dessous et cinq niveaux au-dessus de son niveau.</li>
+</ul>
+<p>- Chaque fois que le sorcier entropiste lance un sort, il a 5 % de chances d&#x27;engendrer un hiatus entropique.</p>
+<p><strong>HIATUS ENTROPIQUE :</strong> Un hiatus entropique génère un effet complètement aléatoire à la place des effets du sort initialement lancé. Ses effets peuvent être bénéfiques ou au contraire, néfastes pour l&#x27;entropiste et ses alliés.</p></div></details>
+<details class="zone" id="kit-160"><summary>Ensorceleur moine</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut progresser (une étoile) dans les styles de combat à une main, à deux mains et à deux armes.</li>
+<li>Bonus de +2 points en vitesse de déplacement, +1 tous les 5 niveaux.</li>
+<li>Gagne 1/2 attaque par round tous les 3 niveaux, maximum +3 attaques par round.</li>
+<li>Gagne un bonus de +1 aux dégâts de mêlée et au TAC0 tous les 3 niveaux, avec un maximum de +7.</li>
+<li>Bonus de +2 aux jets de sauvegarde contre les Sorts.</li>
+<li>Parade de projectiles : +1 à la Classe d&#x27;Armure contre les projectiles par tranche de 3 niveaux.</li>
+<li>Sa Classe d&#x27;Armure initiale est de 9 au niveau 1, et augmente ensuite de 1 tous les 2 niveaux.</li>
+<li>Niveau 5 : Immunité à la maladie, à la hâte et au ralentissement.</li>
+<li>Niveau 7 : Peut utiliser « Imposition des mains » pour guérir 2 points de vie par niveau.</li>
+<li>Niveau 8 : Bonus de -1 au facteur de vitesse.</li>
+<li>Niveau 9 : Bonus de +1 aux jets de sauvegarde et immunité aux charmes.</li>
+<li>Niveau 11 : Immunité au poison.</li>
+<li>Niveau 12 : Bonus de -1 au facteur de vitesse.</li>
+<li>Niveau 14 : 3 % de résistance à la magie par niveau (démarre avec 42 % au niveau 14).</li>
+<li>Niveau 20 : Immunité aux armes non magiques.</li>
+<li>Doit être d&#x27;alignement loyal.</li>
+<li>Dés de vie : d6.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas utiliser d&#x27;armes à projectiles.</li>
+<li>Ne connaît pas le Coup étourdissant et la Paume vibratoire.</li>
+<li>Lance deux sorts de moins par niveau et par jour.</li>
+</ul></div></details>
+<details class="zone" id="kit-70"><summary>Chaman belluaire</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut utiliser « Convocation de familier ».</li>
+<li>Niveau 8 : gagne « Convocation d&#x27;animaux I » en tant que sort de niveau 1.</li>
+<li>Niveau 10 : gagne « Convocation d&#x27;animaux II » en tant que sort de niveau 2.</li>
+<li>Niveau 12 : gagne « Convocation d&#x27;animaux III » en tant que sort de niveau 3.</li>
+</ul>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut utiliser que les bâtons, les gourdins et les arcs courts.</li>
+</ul></div></details>
+<details class="zone" id="kit-80"><summary>Chaman justicier</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Au niveau 7, il peut changer de forme en loup, en ours noir ou en ours brun une fois par jour.</li>
+<li>Au niveau 10, il peut changer de forme en Araignée-sabre, en Bébé wiverne ou en Salamandre de feu une fois par jour.</li>
+<li>Au niveau 19, il acquiert un usage supplémentaire des métamorphoses.</li>
+<li>Six sorts profanes jusqu&#x27;au 6e niveau sont ajoutés à son répertoire :</li>
+</ul>
+<p class="progression">Niveau 1 : Orbe chromatique</p>
+<p class="progression">Niveau 2 : Toile d&#x27;araignée</p>
+<p class="progression">Niveau 3 : Éclair</p>
+<p class="progression">Niveau 4 : Invisibilité majeure</p>
+<p class="progression">Niveau 5 : Chaos</p>
+<p class="progression">Niveau 6 : Chaîne d&#x27;éclairs</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut porter d&#x27;armure plus lourde que celle de cuir.</li>
+<li>-2 en Force et Constitution.</li>
+<li>Alignement limité à Neutre strict.</li>
+</ul></div></details>
+<details class="zone" id="kit-250"><summary>Chaman archer</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +1 aux jets de toucher et de dégâts avec les armes à projectiles tous les 3 niveaux.</li>
+<li>Peut atteindre la grande maîtrise (5 étoiles) avec les arcs courts.</li>
+<li>Peut utiliser la compétence « Tir ajusté » une fois par jour tous les 4 niveaux à partir du niveau 4.</li>
+</ul>
+<p><strong>TIR AJUSTÉ :</strong> Toute attaque à distance effectuée dans les 10 secondes possède les effets cumulatifs suivants (en plus des dégâts normaux) en fonction du niveau de l&#x27;Archer :</p>
+<p class="progression">Niveau 4 : La cible subit un malus de -1 au TAC0.</p>
+<p class="progression">Niveau 8 : La cible subit un malus de -1 aux jets de sauvegarde contre les sorts.</p>
+<p class="progression">Niveau 12 : La cible subit un malus de -1 à la Force.</p>
+<p class="progression">Niveau 16 : +2 aux jets de dégâts du tir.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Dé de vie : D6.</li>
+</ul></div></details>
+<details class="zone" id="kit-270"><summary>Chaman skalde</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Bonus de +1 aux jets de toucher et de dégâts.</li>
+<li>Sa danse a des effets différents de celle du chaman et varie en fonction de son niveau :</li>
+</ul>
+<p class="progression">Niveau 1-14 : Les alliés gagnent un bonus de +2 aux jets de toucher et de dégâts et +2 à la CA.</p>
+<p class="progression">Niveau 15-19 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d&#x27;armure, et une immunité contre la peur.</p>
+<p class="progression">Niveau 20 : Les alliés gagnent un bonus de +4 aux jets de toucher et de dégâts, +4 à la classe d&#x27;armure, et une immunité contre la peur, l&#x27;étourdissement et la confusion.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Sa danse n&#x27;invoque pas les esprits.</li>
+</ul></div></details>
+<details class="zone" id="kit-290"><summary>Chaman totémique</summary><div class="zonebody"><h4>Avantages :</h4>
+<ul>
+<li>Peut utiliser « Convocation d&#x27;esprit animal » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.</li>
+</ul>
+<p><strong>CONVOCATION D&#x27;ESPRIT ANIMAL :</strong> Le chaman totémique peut invoquer un esprit animal (ours, loup, lion ou serpent) pour l&#x27;aider pendant 6 tours. L&#x27;esprit animal a 1 DV au niveau 1, 3 DV au niveau 3, 5 DV au niveau 5, 7 DV au niveau 7 et 10 DV au niveau 10.</p>
+<h4>Inconvénients :</h4>
+<ul>
+<li>Ne peut pas danser.</li>
+</ul></div></details><div class="backtop"><a href="#top">Retour en haut</a></div></section><section class="content" id="versions"><h2>Historique des mises à jour</h2><br><details class="versionbox"><summary>Version 2</summary><div class="versionbody"><ul><li>Ajout de trois kits.</li><li>Les guerriers peuvent maintenant se jumeler (les voleurs le peuvent, pourquoi pas les guerriers ?).</li><li>Voleur tyréen : correction du texte : sa capacité dure 2 rounds, pas 2 tours.</li><li>Voleur tyréen : changement de son inconvénient.</li><li>Correction du texte en anglais pour le Défenseur barbare.</li></ul></div></details><details class="versionbox"><summary>Version 3</summary><div class="versionbody"><ul><li>Ajout du kit Ensorceleur moine.</li><li>Inversion : l&#x27;Inquisiteur archer devient l&#x27;Archer inquisiteur (un paladin sans épée sanctifiée ?).</li><li>Réorganisation de l&#x27;ordre d&#x27;installation des composants pour les mettre dans l&#x27;ordre des classes.</li></ul></div></details><details class="versionbox"><summary>Version 4</summary><div class="versionbody"><ul><li>Ajout du kit Traqueur chasseur de primes.</li></ul></div></details><details class="versionbox"><summary>Version 5</summary><div class="versionbody"><p>Unlimited Edition : me limiter à une seule occurrence de classe/kit limitait les possibilités. La version &quot;UNLIMITED&quot; fait sauter cette limitation.</p><ul><li>Ajout de 11 kits.</li><li>Voleur métamorphe : son inconvénient &quot;ne peut pas porter d&#x27;armure&quot; ne peut plus être outrepassé par l&#x27;UAI.</li><li>Correction : le Moine Maître-Shi pouvait perdre son bonus de CA s&#x27;il recevait un Ctrl+R.</li><li>Correction : le Moine assassin avait en plus les compétences du moine de la Conscience solaire.</li></ul></div></details><details class="versionbox"><summary>Version 5.1</summary><div class="versionbody"><ul><li>Ajout d&#x27;un ~ manquant dans le fichier .tra anglais : son absence empêchait l&#x27;installation du mod en anglais.</li><li>Ajout du kit Chaman totémique.</li></ul></div></details><details class="versionbox"><summary>Version 5.2</summary><div class="versionbody"><ul><li>Correction des textes en français et en anglais.</li><li>Combinaison des fichiers &quot;lisez_moi&quot; et &quot;mise à jour&quot; en un seul fichier HTML.</li></ul></div></details><div class="backtop"><a href="#top">Retour en haut</a></div></section></main></div></body></html>
