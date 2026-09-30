@@ -9,6 +9,7 @@
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=34909)  
 [Link to the beamdog forum and complete descriptions](https://forums.beamdog.com/discussion/89445/mod-crossclass-powerkits/p1)  
+  
 [Lien vers les descriptions complètes.](https://htmlpreview.github.io/?https://github.com/Deratiseur/CrossClass/blob/main/Derats_Powerkits/Readme_French.html)  
 [Link to complete descriptions.](https://htmlpreview.github.io/?https://github.com/Deratiseur/CrossClass/blob/main/Derats_Powerkits/Readme_English.html)   
 
